@@ -49,7 +49,6 @@ html,body,.container,.section{ height: 100%;}
 .head-theme-item{ display: flex; width: 8.2rem;}
 .head-theme-item,.head-theme-item .info-con ul{  height: 8.533333rem; }
 .head-theme-item .info-con ul{
-    float: left;
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
