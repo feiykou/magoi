@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>唔该 - 飞扬</title>
+    <!--包含头部文件-->
+    {include file="public/header" /}
+
+    <style type="text/css">
+        .swiper-container {
+          width: 100%;
+          height: 100%;
+        }
+        .product-swiper-container{
+        }
+        .product-swiper-container img{
+            width: 100%;
+        }
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+        
+        .svg-container{
+
+        }
+        #head-svg{
+            position: absolute;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container font14">
+        <div class="main-content">
+            <!--包含左侧logo-->
+            {include file="public/left" /}
+            <div class="content-wrap section">
+                <div class="content-container">
+                    <div class="head-theme">
+                        <div class="head-teme-more-icon">
+                            <div class="more-icon"><img src="__STATIC__/home/images/more-icon.png" alt=""></div>
+                        </div>
+                        <div class="head-theme-wrap">
+                            <div class="head-theme-item colfff">
+                                <div class="info-con fontletter16">
+                                    <ul>
+                                        <li>「唔该」这句口头禅频繁出现在人际交往中理应表示谢意的场合——这场合本来应该说「谢谢」的，但是广东人就一句「唔该」。</li>
+                                        <li>古语「该」通「赅」，意为具备、完备、包括。《说文解字》释「该」道：「军中约也。」这又把它的使用情况界定在军队内。作为语言发展的一种结果，「该」的派生义「应该」已成为今日使用中的主要义，而渐被人忘却的基本义则转由「赅」去承担。</li>
+                                    </ul>
+                                </div>
+                                <div class="ch-logo fl font26"><span>唔該</span></div>
+                                <div class="en-logo font54">mgoi</div>
+                            </div>
+                        </div>
+                        <div class="svg-container">
+                        <svg id="head-svg" viewBox="0 0 963 690" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx='520' cy='350' r='30' fill='#fff' opacity='0'>
+                                <animate id="a1" attributeName="r" attributeType="XML" from="0" to="800" begin="0s" dur="1s" keySplines='1 0 .25 .25' fill="freeze"></animate>
+                                <animate id="a2" attributeName="opacity" attributeType="css" from="1" to="0" begin="0s" dur=".6s" fill="freeze" keySplines='1 0 .25 .25'></animate>
+                            </circle>
+                        </svg>
+                        </div>
+                    </div>
+                    <!-- 分享 -->
+                    <div class="share-wrap">
+                        <ul>
+                            <li class="wx-wrap pr">
+                                <div class="share-icon"><img src="__STATIC__/home/images/wx-icon-hover.png" alt=""></div>
+                                <div class="share-tit"><div>最新的公众号资讯</div></div>
+                                <div class="share-more">
+                                    <div class="more-icon"><img src="__STATIC__/home/images/more-icon-blue.png" alt=""></div>
+                                </div>
+                            </li>
+                            <li class="wx-wrap pr">
+                                <div class="share-icon"><img src="__STATIC__/home/images/wb-icon-hover.png" alt=""></div>
+                                <div class="share-tit"><div>官微带你看动态</div></div>
+                                <div class="share-more">
+                                    <div class="more-icon"><img src="__STATIC__/home/images/more-icon-blue.png" alt=""></div>
+                                </div>
+                            </li>
+                            <li class="wx-wrap pr">
+                                <div class="share-icon"><img src="__STATIC__/home/images/taobao-icon-hover.png" alt=""></div>
+                                <div class="share-tit"><div>一起逛逛逛吧</div></div>
+                                <div class="share-more">
+                                    <div class="more-icon"><img src="__STATIC__/home/images/more-icon-blue.png" alt=""></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 产品 -->
+                    <div class="product-wrap">
+                        <div class="swiper-container product-swiper-container">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="__STATIC__/home/images/p1.png" alt=""></div>
+                              <div class="swiper-slide"><img src="__STATIC__/home/images/p1.png" alt=""></div>
+                              <div class="swiper-slide"><img src="__STATIC__/home/images/p1.png" alt=""></div>
+                              <div class="swiper-slide"><img src="__STATIC__/home/images/p1.png" alt=""></div>
+                              <div class="swiper-slide"><img src="__STATIC__/home/images/p1.png" alt=""></div>
+                              <div class="swiper-slide"><img src="__STATIC__/home/images/p1.png" alt=""></div>
+                              <div class="swiper-slide"><img src="__STATIC__/home/images/p1.png" alt=""></div>
+                              <div class="swiper-slide"><img src="__STATIC__/home/images/p1.png" alt=""></div>
+                              <div class="swiper-slide"><img src="__STATIC__/home/images/p1.png" alt=""></div>
+                              <div class="swiper-slide"><img src="__STATIC__/home/images/p1.png" alt=""></div>
+                              <div class="swiper-slide"><img src="__STATIC__/home/images/p1.png" alt=""></div>
+                            </div>
+                            <!-- Add Pagination -->
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                        <div class="product-more tr">
+                            <span class="bold font14">产品一览</span>&nbsp;&nbsp;&nbsp;&nbsp;<div class="more-icon"><img src="__STATIC__/home/images/more-icon-blue.png" alt=""></div>
+                        </div>
+                    </div>
+                    <!-- 招聘 -->
+                    <div class="recruit-wrap clearfix">
+                        <div class="recruit-info fl">
+                            <h2 class="fl font20">招聘</h2>
+                            <p class="font12">我们正在寻找一名工业设计师，请联系我们哦</p>
+                        </div>
+                        <div class="recruit-more tr">
+                            <div class="more-icon"><img src="__STATIC__/home/images/more-icon.png" alt=""></div>
+                        </div>
+                    </div>
+                    <!-- 网上商城 -->
+                    <div class="shopping-wrap">
+                        <div class="tc shopping-tip">
+                            <img src="__STATIC__/home/images/shopping-tip.png" alt="">
+                        </div>
+                        <div class="shopping-more tr">
+                           <div class="more-icon"><img src="__STATIC__/home/images/more-icon-blue.png" alt=""></div>
+                        </div>
+                    </div>
+                    <!--包含底部文件-->
+                    {include file="public/footer" /}
+                </div>
+            </div>
+        </div>
+        <!--包含头部文件-->
+        {include file="public/nav" /}
+    </div>
+
+    <script src="__STATIC__/home/js/zepto.js"></script>
+    <script src="__STATIC__/home/js/swiper.min.js"></script>
+    <script src="__STATIC__/home/js/anime.min.js"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+        // var swiper = new Swiper('.swiper-container', {
+        //     pagination: {
+        //         el: '.swiper-pagination',
+        //         clickable: true
+        //     },
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+        // });
+
+        var arrowMark = true;
+        $(".head-teme-more-icon .more-icon").on('mouseover',function(){
+            document.getElementById('head-svg').unpauseAnimations();
+            $(this).find('img').attr('src','images/more-icon-blue.png');
+        });
+
+        $(".head-teme-more-icon .more-icon").on('mouseout',function(){
+            $(this).find('img').attr('src','images/more-icon.png');
+        });
+
+       
+    </script>
+</body>
+</html>

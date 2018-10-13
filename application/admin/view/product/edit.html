@@ -1,0 +1,371 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!--包含头部文件-->
+	{include file="public/header" /}
+	<!--引入webuploaderCss-->
+	{Uploader:webuploadercss /}
+	<style>
+		.uploader-item .queueList{
+			display: block;
+			opacity: 1;
+			height: auto;
+		}
+	</style>
+</head>
+
+<body>
+<div class="page-container">
+	<form action="" method="post" class="form form-horizontal" id="form-pro-add">
+		<input type="hidden" name="id" value="{$proAllData.id}">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>产品标题：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$proAllData.name}" placeholder="" name="name">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>产品介绍：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$proAllData.introduce}" name="introduce">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>选择所属栏目：</label>
+			<div class="formControls col-xs-2 col-sm-2"> <span class="select-box">
+				<select class="select" name="column_id">
+					<option value="">请选择所属栏目</option>
+					{volist name="columnSortData" id="cate"}
+                <option value="{$cate.id}" {if condition="$cate.id == $proAllData.column_id"}selected{/if}>{if condition="$cate.parent_id != 0"}┞{/if}{$cate.level|str_repeat='┄',###*2}{$cate.name}</option>
+                {/volist}
+				</select>
+				</span> </div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">产品类别：</label>
+			<div class="formControls col-xs-2 col-sm-2"> <span class="select-box">
+				<select class="select" name="pro_cate_id">
+					<option value="">请选择</option>
+					{volist name="cateData" id="cate"}
+                <option value="{$cate.id}" {if condition="$cate.id == $proAllData.pro_cate_id"}selected{/if}>{if condition="$cate.parent_id != 0"}┞{/if}{$cate.level|str_repeat='┄',###*2}{$cate.name}</option>
+                {/volist}
+				</select>
+				</span> </div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>推荐位：</label>
+			<div class="formControls skin-minimal col-xs-5">
+				{volist name="attrData" id="attr" key="k"}
+				<div class="check-box">
+					<label class="checkbox-input"><input type="checkbox" {if condition="in_array($k,$proAllData.attributes)"}checked{/if} name="attributes[]" value="{$k}"><span class="checkbox-name">{$attr}</span></label>
+				</div>
+				{/volist}
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>标签位：</label>
+			<div class="formControls skin-minimal col-xs-5">
+				{volist name="labelsData" id="attr" key="k"}
+				<div class="check-box">
+					<label class="checkbox-input"><input type="checkbox" {if condition="in_array($k,$proAllData.labelsAttr)"}checked{/if} name="attributes[]" value="{$k}"><span class="checkbox-name">{$attr}</span></label>
+				</div>
+				{/volist}
+			</div>
+		</div>
+
+
+
+
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>缩略图：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				{Uploader:webuploader btnVal="上传缩略图" uploadId="mainImg"}
+				{if condition="$proAllData.main_img_url neq ['']"}
+				<ul class="filelist filelist-exist clearfix">
+					{volist name="$proAllData.main_img_url" id="imgs_arr"}
+					<li class="state-complete" data-src="{$imgs_arr}">
+						<p class="imgWrap"><img src="{$imgs_arr}" width="110" height="110"></p>
+						<div class="file-panel"><span class="cancel">删除</span></div>
+						<span class="success"></span>
+					</li>
+					{/volist}
+				</ul>
+				{/if}
+				{/Uploader:webuploader}
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>侧边图：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				{Uploader:webuploader btnVal="上传侧边图" uploadId="sideImg"}
+				{if condition="$proAllData.side_img neq ['']"}
+				<ul class="filelist filelist-exist clearfix">
+					{volist name="$proAllData.side_img" id="imgs_arr"}
+					<li class="state-complete" data-src="{$imgs_arr}">
+						<p class="imgWrap"><img src="{$imgs_arr}" width="110" height="110"></p>
+						<div class="file-panel"><span class="cancel">删除</span></div>
+						<span class="success"></span>
+					</li>
+					{/volist}
+				</ul>
+				{/if}
+				{/Uploader:webuploader}
+			</div>
+		</div>
+
+
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>产品图：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+					{Uploader:webuploader btnVal="上传产品图" uploadId="pro_uploader"}
+					{if condition="$proAllData.imgs_url neq ['']"}
+					<ul class="filelist filelist-exist clearfix">
+						{volist name="$proAllData.imgs_url" id="imgs_arr"}
+						<li class="state-complete" data-src="{$imgs_arr}">
+							<p class="imgWrap"><img src="{$imgs_arr}" width="110" height="110"></p>
+							<div class="file-panel"><span class="cancel">删除</span></div>
+							<span class="success"></span>
+						</li>
+						{/volist}
+					</ul>
+					{/if}
+					{/Uploader:webuploader}
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">原价：</label>
+			<div class="formControls col-xs-1 col-sm-1">
+				<input type="text" class="input-text" value="{$proAllData.price}" name="price">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">现价：</label>
+			<div class="formControls col-xs-1 col-sm-1">
+				<input type="text" class="input-text" value="{$proAllData.ratePrice}" name="ratePrice">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">库存量：</label>
+			<div class="formControls col-xs-1 col-sm-1">
+				<input type="text" class="input-text" value="{$proAllData.stock}" name="stock">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">跳转淘宝链接：</label>
+			<div class="formControls col-xs-9 col-sm-9">
+				<input type="text" class="input-text" value="{$proAllData.link_url}" name="link_url">
+			</div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>产品特点：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<!-- 加载编辑器的容器 -->
+				<script id="detailCon" type="text/plain" name="detailCon" style="width:100%;height:400px;">{$proAllData.detailCon|html_entity_decode}</script>
+            </div>
+		</div>
+
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">点击数：</label>
+			<div class="formControls col-xs-1 col-sm-1">
+				<input type="text" class="input-text" value="{$proAllData.click_num}" name="click_num">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">网页关键词：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$proAllData.keywords}" name="keywords">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2">网页描述：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<textarea name="description" cols="" rows="" class="textarea">{$proAllData.description}</textarea>
+			</div>
+		</div>
+
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+			<button class="btn btn-primary radius save-sub-btn" type="button" data-id="1"><i class="Hui-iconfont">&#xe632;</i> 保存并提交审核</button>
+			<button class="btn btn-secondary radius save-btn" type="button" data-id="0"><i class="Hui-iconfont">&#xe632;</i> 保存草稿</button>
+			<button class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+		</div>
+		</div>
+	</form>
+</div>
+
+<!--包含尾部文件-->
+{include file="public/footer" /}
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__STATIC__/admin/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/lib/ueditor/1.4.3/ueditor.config.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/lib/ueditor/1.4.3/ueditor.all.js"></script>
+	<script>
+		var config = {
+			"upload_server": "{:url('getImg')}"
+		};
+	</script>
+	<!--引入webuploaderJS-->
+	{Uploader:webuploaderjs/}
+	<script>
+		feiy_upload.init({
+			wrap:$("#mainImg"),
+			filePicker: $("#mainImg").find(".filePicker"),
+			uploadId: "#mainImg",
+			server: config.upload_server,
+			fileNumLimit: 2
+		});
+        feiy_upload.init({
+            wrap:$("#sideImg"),
+            filePicker: $("#sideImg").find(".filePicker"),
+            uploadId: "#sideImg",
+            server: config.upload_server,
+            fileNumLimit: 1
+        });
+		feiy_upload.init({
+			wrap:$("#pro_uploader"),
+			filePicker: $("#pro_uploader").find(".filePicker"),
+			uploadId: "#pro_uploader",
+			server: config.upload_server,
+			fileNumLimit: 5
+		});
+	</script>
+
+
+
+	<script type="text/javascript">
+
+		// 检查图片数量是否超过设置值，超出则禁止
+        $(function () {
+            checkUpload();
+        });
+
+        function checkUpload(){
+            var $thumb_list_childs = $("#mainImg .filelist > li");
+            var $sideImg_childs = $("#sideImg .filelist > li");
+            var $pro_list_childs = $("#pro_uploader .filelist > li");
+
+            setTimeout(function(){
+                setNoDrop($thumb_list_childs,2);
+                setNoDrop($sideImg_childs,1);
+                setNoDrop($pro_list_childs,5);
+            },500);
+        }
+
+        function setNoDrop($dom,num){
+            var num = num?num:1;
+            var length = $dom.length;
+            console.log(length,num);
+            if(length >=num){
+                $dom.parents(".queueList").prev().find(".webuploader-pick").css({
+                    'position': 'relative',
+                    'zIndex': 1,
+                    'background': '#f0f0f0',
+                    'cursor': 'no-drop'
+                });
+            }
+        }
+
+
+		// 图片编辑
+        $(".filelist-exist").parents(".queueList").css({
+            'display': 'block',
+            'opacity': 1
+        });
+        $(".filelist-exist").find("li").hover(function(){
+            $(this).find(".file-panel").stop(true).animate({height:"30px"},300);
+        },function(){
+            $(this).find(".file-panel").stop(true).animate({height:0},300);
+        });
+
+        $(".filelist-exist").on("click","span.cancel",function(){
+            $btnDom = $(this).parents(".queueList").prev().find(".webuploader-pick");
+            $btnDom.css({
+                'background': "none",
+                'cursor': 'pointer',
+                'z-index': 0});
+            $li = $(this).parents("li");
+            $parents = $li.parents('.filelist-exist');
+            $li.remove();
+            if($parents.find("li").length == 0){
+                $parents.remove();
+            }
+        });
+
+
+		//checkbox 美化
+		$('.skin-minimal input').iCheck({
+			checkboxClass: 'icheckbox-blue',
+			radioClass: 'iradio-blue',
+			increaseArea: '20%'
+		});
+		// 编辑器
+		$(function(){
+			var ue1 = UE.getEditor('detailCon',{
+				enterTag: 'br'
+			});
+			$(".edit_wrapper").val('');
+		});
+
+		// 保存并审核提交
+		$(".save-sub-btn").on("click",function(){
+			config.save_id = $(this).data("id");
+			$("#form-pro-add").submit();
+		});
+		// 保存为草稿
+		$(".save-btn").on("click",function(){
+			config.save_id = $(this).data("id");
+			$("#form-pro-add").submit();
+		});
+
+
+
+		// 表单验证
+		$("#form-pro-add").validate({
+			rules:{
+				name:{
+					required:true
+				},
+				column_id:{
+					required:true
+				}
+			},
+			messages:{
+				name: "标题不能位空",
+				column_id: "请选择所属栏目"
+			},
+			onkeyup:false,
+			focusCleanup:true,
+			success:"valid",
+			submitHandler:function(form){
+				//数据提交
+				// 获取产品详情页
+				var $img_list_childs = $("#pro_uploader .filelist > li");
+                var $sideImg_childs = $("#sideImg .filelist > li");
+				var $main_list_childs = $("#mainImg .filelist > li");
+				var imgs_url = setUpdateUrl($img_list_childs);
+				var main_img_url = setUpdateUrl($main_list_childs);
+                var sideImg = setUpdateUrl($sideImg_childs);
+                var params = "&imgs_url="+imgs_url+"&main_img_url="+main_img_url+"&side_img="+sideImg;
+				$.ajax({
+					url: "{:url('save')}",
+					type: "post",
+					data: $("#form-pro-add").serialize()+params,
+					success: function(res){
+						layer.msg(res.msg, {icon: 6,time:1000});
+						setTimeout(function(){
+							if(res.data){
+								window.location = res.data;
+							}
+						},1000);
+					}
+				})
+
+			}
+		});
+
+</script>
+</body>
+</html>
