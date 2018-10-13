@@ -127,7 +127,7 @@ html,body,.container,.section{ height: 100%;}
 .shopping-wrap .shopping-tip{ padding:0 1.066667rem; margin-bottom: 0.133333rem }
 /* 底部 */
 .footer{ border-top: 2px solid  #4576a1;}
-.footer-nav{ padding-top: 60px; border-bottom: 2px solid  #4576a1; font-size: 18px;}
+.footer-nav{ padding-top: 60px; border-bottom: 2px solid  #4576a1; }
 .footer-nav ul>li{ padding: 0.4rem 0; border-right: 1px solid #4576a1;}
 .footer-nav ul>li.footer-logo-wrap{ padding-left: 1.066667rem; border-bottom: 0.026667rem solid #000; }
 .footer-nav-product img{ display: none;}
@@ -135,18 +135,18 @@ html,body,.container,.section{ height: 100%;}
 .footer-nav-shopping{ position: absolute; right: 1.066667rem; bottom: 0;}
 .footer-nav-shopping img{ position: relative; top: -15px;}
 .footer-nav ul>.three-nav{ display: flex; }
-.footer-nav ul>.three-nav p{  margin-left: 1.333333rem; }
+.footer-nav ul>.three-nav p{  margin-left: 0.933333rem; }
 .footer-nav ul>.three-nav p.text a{ display: inline-block; line-height: 22px;}
 
 
 
 .content-section{
-    padding: 100px 54px 0 60px;
+    padding: 1.333333rem 0.72rem 0 0.8rem;
     color: #fff;
 }
 .page-main-tit{
     color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 0.2rem;
 }
 .inside-page-more-icon{
     border-color: #fff;
@@ -161,7 +161,7 @@ html,body,.container,.section{ height: 100%;}
 }
 .curpage-nav ul li{
     float: left;
-    margin-right: 46px;
+    margin-right: 0.613333rem;
 }
 
 .h-tit{
@@ -173,18 +173,18 @@ html,body,.container,.section{ height: 100%;}
     color: #fff;
 }
 .block-section{
-    padding-bottom: 56px;
+    padding-bottom: 0.746667rem;
 }
 /* 关于我们 */
 .about-content-section{
     background-color: #bc412e;
 }
 .video-item{
-    height: 192px;
+    height: 2.56rem;
     background: #fff;
 }
 .source-item p{
-    padding-bottom: 20px;
+    padding-bottom: 0.266667rem;
     line-height: 0.56rem;
     letter-spacing: 0.01em;
     text-align: justify;
@@ -219,7 +219,7 @@ html,body,.container,.section{ height: 100%;}
 }
 .product-page-item .tit{
     line-height: 0.426667rem;
-    padding-left: 15px;
+    padding-left: 0.2rem;
 }
 
 /* 联系我们 */
