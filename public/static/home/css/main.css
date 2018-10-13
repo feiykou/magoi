@@ -73,6 +73,7 @@ html,body,.container,.section{ height: 100%;}
 .ch-logo span{
     position: absolute;
     bottom: 0;
+    left:0;
     width: 2.666667rem;
     line-height: 0.72rem;
     text-shadow: 1px 2px 2px #333;
