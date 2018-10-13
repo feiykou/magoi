@@ -229,6 +229,11 @@ html,body,.container,.section{ height: 100%;}
 }
 
 /* 联系我们 */
+/*地图*/
+#allmap{
+    height: 3.466667rem;
+    margin-top:0.4rem;
+}
 .contact-content-section{
     background-color: #b5b5b5;
 }
@@ -488,6 +493,12 @@ html,body,.container,.section{ height: 100%;}
     .contact-content-section{
         background-color: #b5b5b5;
     }
+
+    /* 联系我们*/
+    #allmap{
+        height: 300px;
+        margin-top:30px;
+    }
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
@@ -501,6 +512,9 @@ and (max-resolution: 1dppx) and
     .product-page-item li:nth-child(2n){
         margin-right: 0;
     }
+    .shopping-wrap .shopping-tip img{
+        width: 60%;
+    }
     .head-theme-item,.head-theme-item .info-con ul{  height: 375px; }
 }
 
@@ -513,6 +527,9 @@ and (max-resolution: 1dppx) and
     .head-theme-item{
         width: 90%;
         height: 490px;
+    }
+    .shopping-wrap .shopping-tip img{
+        width: 60%;
     }
     .head-theme-item,.head-theme-item .info-con ul{  height: 490px; }
 }

@@ -6,6 +6,7 @@
     <title>唔该 - 飞扬</title>
     <!--包含头部文件-->
     {include file="public/header" /}
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZqzOzo6C7peDO1Lq6MWH8PGYYHExOkf9"></script>
 </head>
 <body>
     <div class="container">
@@ -33,6 +34,7 @@
                                 <p><span>电话</span>020 - 38608003</p>
                                 <p><span>邮箱</span>m3goi1@163.com</p>
                             </div>
+                            <div id="allmap"></div>
                         </div>
                         <div class="crecruit-wrap block-section">
                             <h2 class="h-tit font14">招聘</h2>
@@ -49,5 +51,56 @@
         <!--包含头部文件-->
         {include file="public/nav" /}
     </div>
+
+    <script>
+        var fdata = {
+            baiduGpsLat: '113.2719437397',
+            baiduGpsLog: '23.1059797775',
+            name: '大误',
+            address: '广东省广州市海珠区海幢街道仁厚直社区'
+        };
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");
+        var point = new BMap.Point(fdata.baiduGpsLat, fdata.baiduGpsLog);
+        map.centerAndZoom(point, 15);
+        var marker = new BMap.Marker(point);  // 创建标注
+        map.addOverlay(marker);               // 将标注添加到地图中
+        marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+        map.addEventListener("click", function(){
+            openClient();
+        });
+        map.enableScrollWheelZoom(true);
+
+
+        var baiduConfig = {
+            scheme_Android: 'bdapp://map/marker?location='+fdata.baiduGpsLat+','+fdata.baiduGpsLog+'&title='+fdata.name+'&content='+fdata.address,
+            scheme_IOS: 'baidumap://map/marker?location='+fdata.baiduGpsLat+','+fdata.baiduGpsLog+'&title='+fdata.name+'&content='+fdata.address,
+            scheme_web: 'http://api.map.baidu.com/marker?location='+fdata.baiduGpsLat+','+fdata.baiduGpsLog+'&title='+fdata.name+'&content='+fdata.address+'&output=html'
+        };
+        var timeout = 600;
+        // 判断操作系统，返回百度的不同操作系统下的接口
+        function adjustOS(){
+            var ua = window.navigator.userAgent.toLowerCase();
+            return (ua.indexOf('os') > 0) ? baiduConfig.scheme_IOS : baiduConfig.scheme_Android
+        }
+        function openClient() {
+            var startTime = Date.now();
+            var ifr = document.createElement('iframe');
+            ifr.src = adjustOS();
+            ifr.style.display = 'none';
+            document.body.appendChild(ifr);
+            var t = setTimeout(function() {
+                var endTime = Date.now();
+                if (!startTime || endTime - startTime < timeout + 200) {
+                    window.location.href = baiduConfig.scheme_web;
+                }
+            }, timeout);
+            window.onblur = function() {
+                clearTimeout(t);
+            }
+        }
+
+
+    </script>
 </body>
 </html>
