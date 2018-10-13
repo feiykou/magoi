@@ -4,13 +4,13 @@ return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址
-    'hostname'        => '119.23.11.98',
+    'hostname'        => '',
     // 数据库名
-    'database'        => 'bigwu',
+    'database'        => '',
     // 用户名
     'username'        => 'root',
     // 密码
-    'password'        => 'Bigwu2018.',
+    'password'        => '',
     // 端口
     'hostport'        => '',
     // 连接dsn
