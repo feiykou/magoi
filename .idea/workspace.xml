@@ -88,8 +88,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/static/home/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="286" column="37" lean-forward="false" selection-start-line="286" selection-start-column="31" selection-end-line="286" selection-end-column="37" />
+            <state relative-caret-position="214">
+              <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -153,6 +153,7 @@
       <find>head-theme-item</find>
       <find>ch-logo</find>
       <find>info-con</find>
+      <find>.head-theme-item .info-con</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -632,7 +633,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63338000" />
+    <option name="totallyTimeSpent" value="63695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -1002,8 +1003,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/static/home/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="286" column="37" lean-forward="false" selection-start-line="286" selection-start-column="31" selection-end-line="286" selection-end-column="37" />
+        <state relative-caret-position="214">
+          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
           <folding />
         </state>
       </provider>

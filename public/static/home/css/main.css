@@ -47,6 +47,9 @@ html,body,.container,.section{ height: 100%;}
 .content-wrap .head-theme{ position: relative; }
 .content-wrap .head-theme-wrap{ display: flex; flex-direction: column; align-items: center; justify-content: center; height: 12.8rem; background-color: #4576a1; }
 .head-theme-item{ display: flex; width: 8.2rem;}
+.head-theme-item .info-con{
+    display: inline-block;
+}
 .head-theme-item,.head-theme-item .info-con ul{  height: 8.533333rem; }
 .head-theme-item .info-con ul{
     -ms-writing-mode: tb-rl;
