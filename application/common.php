@@ -93,7 +93,8 @@ function getTemplateView($template_id=0){
     var_dump($templateArr);
     foreach ($templateArr as $k=>$v){
         var_dump($v['key'].'====='.$template_id);
-        if($v['key'] === $template_id){
+        var_dump($v['key'] == $template_id);
+        if($v['key'] == $template_id){
             var_dump($v['view']);
             return $v['view'];
         }
