@@ -891,3 +891,246 @@
   '/static/home/js/swiper_min_js_map' => '',
 )
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T11:10:45+08:00 ] 127.0.0.1 GET /
+[ info ] bigwu.com/ [运行时间：0.026242s][吞吐率：38.11req/s] [内存消耗：1,183.33kb] [文件加载：30]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'bigwu.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => '__guid=25323182.104445654605618800.1539394321289.062; monitor_count=8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T11:10:47+08:00 ] 127.0.0.1 GET /
+[ info ] bigwu.com/ [运行时间：0.019855s][吞吐率：50.37req/s] [内存消耗：1,183.33kb] [文件加载：30]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, image/jxr, */*',
+  'accept-language' => 'zh-CN',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'bigwu.com',
+  'connection' => 'Keep-Alive',
+  'cookie' => '__guid=25323182.104445654605618800.1539394321289.062; monitor_count=8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T11:11:09+08:00 ] 127.0.0.1 GET /
+[ info ] bigwu.com/ [运行时间：0.024877s][吞吐率：40.20req/s] [内存消耗：1,183.41kb] [文件加载：30]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T11:11:19+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.285762s][吞吐率：3.50req/s] [内存消耗：2,860.88kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.034743s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.021344s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.021900s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.021478s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.021504s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.020880s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.020648s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.019867s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.020356s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.020026s ]
+---------------------------------------------------------------
+[ 2018-10-13T11:11:21+08:00 ] 127.0.0.1 GET /about/7
+[ info ] bigwu.com/about/7 [运行时间：0.311214s][吞吐率：3.21req/s] [内存消耗：3,041.94kb] [文件加载：50]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'about',
+    2 => 'about',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://bigwu.com/home',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/about/7' => '',
+  'cate_id' => '7',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\About->about[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\About.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\about\about.html [ array (
+  0 => 'columnData',
+  1 => 'cur_cate_id',
+  2 => 'parent_id',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030297s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.019910s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.020882s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.023064s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.020916s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.019229s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.019563s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `id` = 7 LIMIT 1 [ RunTime:0.019590s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.018928s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.018918s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.018128s ]
+---------------------------------------------------------------
+[ 2018-10-13T11:11:27+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.020892s][吞吐率：47.87req/s] [内存消耗：1,231.73kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T11:11:28+08:00 ] 127.0.0.1 GET /images/more-icon-blue.png
+[ info ] bigwu.com/images/more-icon-blue.png [运行时间：0.043750s][吞吐率：22.86req/s] [内存消耗：1,232.35kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'more-icon-blue.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://bigwu.com/home',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/images/more-icon-blue_png' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T11:11:28+08:00 ] 127.0.0.1 GET /images/more-icon.png
+[ info ] bigwu.com/images/more-icon.png [运行时间：0.033656s][吞吐率：29.71req/s] [内存消耗：1,232.19kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'more-icon.png',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://bigwu.com/home',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/images/more-icon_png' => '',
+)
+[ info ] [ LOG ] INIT File
