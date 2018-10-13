@@ -90,10 +90,9 @@ function pagination($obj){
 // 获取对应模板的view
 function getTemplateView($template_id=0){
     $templateArr = config('template.template_type');
-    var_dump($templateArr);
     foreach ($templateArr as $k=>$v){
-        var_dump($v['key'].'====='.$template_id);
-        var_dump($v['key'] == $template_id);
+//        var_dump($v['key'].'====='.$template_id);
+//        var_dump($v['key'] == $template_id);
         if($v['key'] == $template_id){
             var_dump($v['view']);
             return $v['view'];
