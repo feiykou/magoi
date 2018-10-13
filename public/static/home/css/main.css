@@ -87,6 +87,7 @@ html,body,.container,.section{ height: 100%;}
 }
 
 .head-teme-more-icon{
+    position: absolute;
     width: 10rem;
     margin-top: 0.266667rem;
     text-align: right;
@@ -483,7 +484,7 @@ html,body,.container,.section{ height: 100%;}
 @media screen and (max-device-width: 1400px) and (min-device-width: 992px) and (-webkit-min-device-pixel-ratio: 2) and
 (min--moz-device-pixel-ratio: 2)  and
 (min-resolution: 2dppx) and
-(min-resolution: 192dpi){
+(min-resolution: 192dpi){{
     .product-page-item li.active{
         width: 48%;
         margin: 0 4% 42px 0;
@@ -497,7 +498,7 @@ html,body,.container,.section{ height: 100%;}
 @media screen and (max-device-width: 1200px) and (min-device-width: 992px) and (-webkit-min-device-pixel-ratio: 2) and
 (min--moz-device-pixel-ratio: 2)  and
 (min-resolution: 2dppx) and
-(min-resolution: 192dpi){
+(min-resolution: 192dpi){{
     .about-container{ width: 860px; margin-left: 110px;}
     .en-logo{ display: none; }
 }
@@ -506,7 +507,7 @@ html,body,.container,.section{ height: 100%;}
 @media screen and (max-device-width: 1400px) and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and
 (min--moz-device-pixel-ratio: 2)  and
 (min-resolution: 2dppx) and
-(min-resolution: 192dpi){
+(min-resolution: 192dpi){{
     .about-container{ width: 860px; margin-left: 110px;}
     .head-theme-item{
         width: 90%;
@@ -520,7 +521,7 @@ html,body,.container,.section{ height: 100%;}
 @media screen and (max-device-width: 1400px) and (-webkit-min-device-pixel-ratio: 2) and
 (min--moz-device-pixel-ratio: 2)  and
 (min-resolution: 2dppx) and
-(min-resolution: 192dpi){
+(min-resolution: 192dpi){{
     .about-container{ width: 860px; margin-left: 110px;}
     .head-theme-item{
         width: 90%;
