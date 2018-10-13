@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!--包含头部文件-->
+    {include file="public/header" /}
+</head>
+<body>
+<div class="page-container">
+    <form class="form form-horizontal form-o2o-add" id="form-wrapper">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>登录名：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" name="name">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>姓名：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" name="real_name">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>密码：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="password" class="input-text" value="" name="pwd">
+            </div>
+        </div>
+
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+                <button type="button" class="btn btn-primary radius save-btn" ><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+                <button onClick="layer_close();" class="btn btn-default radius" type="button">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!--包含头部文件-->
+{include file="public/footer" /}
+<script type="text/javascript" src="__STATIC__/admin/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
+<script>
+
+    $(".save-btn").on("click",function(){
+        $("#form-wrapper").submit();
+    });
+
+    $("#form-wrapper").validate({
+        rules:{
+            name:{
+                required:true,
+            },
+            real_name:{
+                required:true,
+            },
+            pwd:{
+                required:true,
+            }
+        },
+        messages:{
+            name: "登录名不能为空",
+            real_name: "姓名不能为空",
+            pwd: "密码不能为空"
+        },
+        onkeyup:false,
+        focusCleanup:true,
+        success:"valid",
+        submitHandler:function(form){
+            $.ajax({
+                url: "{:url('user/save')}",
+                type: "post",
+                data: $("#form-wrapper").serialize(),
+                success: function(res){
+                    layer.msg(res.msg, {icon: 6,time:1000});
+                    if(res.data){
+                        parent.window.location = res.data;
+                    }
+                }
+            });
+        }
+    });
+
+</script>
+</body>
+</html>
+

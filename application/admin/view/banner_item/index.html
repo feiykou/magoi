@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!--包含头部文件-->
+    {include file="public/header" /}
+    <style>
+        .sel-box-wrap.inline{
+            width: 200px;
+            padding: 0;
+        }
+        .sel-box-wrap.inline .select{
+            width: 100%;
+            padding: 4px 5px;
+        }
+    </style>
+</head>
+<body class="pos-r">
+<div>
+    <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 产品管理<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+    <div class="page-container">
+        <form action="{:url('index')}" method="get">
+            <div class="text-c">
+                <span class="select-box sel-box-wrap inline">
+                <select name="" class="select">
+                    {volist name="bannerArr" id="banner"}
+                            <option value='{$banner.id}' {if condition="$banner.id == $banner_id"}selected{/if}>{$banner.name}</option>
+                    {/volist}
+                </select>
+                </span>
+                <button name="" id="" class="btn btn-success" type="submit"><i class="Hui-iconfont"></i> 搜资讯</button>
+            </div>
+        </form>
+        <div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="javascript:;" onclick="getSelectAllTr('{:url(\'banner_item/removeMoreArt\')}')" class="btn btn-danger radius mr10"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a><a class="btn btn-primary radius" href="javascript:;" onclick="s_edit('添加轮播图','{:url(\'banner_item/add\')}','',560)"><i class="Hui-iconfont"></i> 添加轮播图</a></span> <span class="r">共有数据：<strong>{:count($bannerItemsData)}</strong> 条</span> </div>
+        <div class="mt-20">
+            <table class="table table-border table-bordered table-bg table-hover table-sort">
+                <thead>
+                <tr class="text-c">
+                    <th width="40"><input name="" type="checkbox" value=""></th>
+                    <th width="40">ID</th>
+                    <th width="200">图片</th>
+                    <th width="800">名称</th>
+                    <th width="80">跳转id</th>
+                    <th width="80">跳转类型</th>
+                    <th width="80">操作</th>
+                </tr>
+                </thead>
+                <tbody class="table-body">
+                {volist name="bannerItemsData" id="bannerItem"}
+                    <tr class="text-c va-m" data-id="{$bannerItem.id}">
+                        <td><input class="checkbox_sel" name="" type="checkbox" value=""></td>
+                        <td>{$bannerItem.id}</td>
+                        <td>{if condition="$bannerItem.img_url"}<a href="{$bannerItem.img_url}" target="_blank"><img src="{$bannerItem.img_url}" width="60" height="60" alt=""></a>{/if}</td>
+                        <td>{$bannerItem.name}</td>
+                        <td>{$bannerItem.key_word}</td>
+                        <td>{$redic_typeArr[$bannerItem.type]}</td>
+                        <td class="td-manage"><a style="text-decoration:none" class="ml-5" onClick="s_edit('栏目','{:url('edit',['id'=>$bannerItem.id])}','',560)" href="javascript:;" title="编辑"><i class="Hui-iconfont">&#xe6df;</i></a> <a style="text-decoration:none" class="ml-5" onClick="btn_del(this,'{:url('removeArt', ['id'=>$bannerItem.id])}')" href="javascript:;" title="删除"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
+                    </tr>
+                {/volist}
+                </tbody>
+            </table>
+            <div class="paging-wrap"></div>
+
+        </div>
+    </div>
+</div>
+
+<!--包含尾部文件-->
+{include file="public/footer" /}
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="__STATIC__/admin/lib/zTree/v3/js/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="__STATIC__/admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script src="__STATIC__/admin/js/product.js"></script>
+
+</body>
+</html>

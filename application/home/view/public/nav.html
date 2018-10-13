@@ -1,0 +1,16 @@
+<div class="tab-wrap section">
+    <div class="tab-container">
+        <dl>
+            <dt><a href="/"><img src="__STATIC__/home/images/logo.png" alt=""></a></dt>
+            {volist name="columnData" id="column"}
+            <dd><a class="active-{$key} {present name="cur_cate_id"}
+    {if condition="$column.id eq $cur_cate_id || $parent_id eq $column.id"} active{/if}
+    {/present}"
+
+    href="{if condition='$column.template_id neq 0'}/{:getTemplateView($column.template_id)}/{$column.id}
+    {else/}{$column.link_url}
+    {/if}">{$column.name}</a></dd>
+{/volist}
+</dl>
+</div>
+</div>

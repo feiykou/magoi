@@ -1,0 +1,227 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<!--包含头部文件-->
+{include file="public/header" /}
+	<style>
+		body {
+			color: #797979;
+			background: #f1f2f7;
+			font-family: 'Open Sans', sans-serif;
+			padding: 0px !important;
+			margin: 0px !important;
+			font-size: 13px;
+		}
+		.table-bordered{
+			border: 0!important;
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 产品管理 <span class="c-gray en">&gt;</span> 品牌管理 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<div class="cl pd-5 bg-1 bk-gray mt-20">
+		<span class="l">
+			<span class="btn btn-danger radius selectAll-del"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</span>
+			<span class="btn btn-primary radius ml-10 btn-add" data-toggle="modal" data-target="#add-modal"><i class="Hui-iconfont">&#xe600;</i> 添加分类</span>
+		</span></div>
+	<div class="mt-20">
+		<table class="table table-border table-bordered table-bg table-sort table-hover">
+			<thead>
+				<tr class="text-c">
+					<th width="25"><input type="checkbox" name="" value=""></th>
+					<th width="70">ID</th>
+					<th class="text-l" width="380">产品名</th>
+					<th width="10">排序</th>
+					<th width="280">产品父类</th>
+					<th width="100">操作</th>
+				</tr>
+			</thead>
+			<tbody class="table-body">
+				{volist name="categorys" id="catelist"}
+				<tr class="text-c" data-id="{$catelist.id}">
+					<td><input class="checkbox_sel" name="" type="checkbox" value=""></td>
+					<td>{$catelist.id}</td>
+					<td class="text-l">{if condition="$catelist.parent_id != 0"}┞{/if}{$catelist.level|str_repeat='┄',###*2}{$catelist.name}</td>
+					<td class="listorder"><input size="3" data-id="{$catelist.id}" name="listorder" value="{$catelist.listorder}"/></td>
+					<td>{if condition="$catelist.parent_id == 0"}顶级分类{else /}{$catelist.pname}{/if}</td>
+					<td class="f-14 product-brand-manage">
+						<span class="btn-edit" style="cursor: pointer;" title="编辑" data-id="{$catelist.id}" data-toggle="modal" data-target="#edit-modal"><i class="Hui-iconfont">&#xe6df;</i></span>
+						<span class="btn-del ml-5" style="cursor: pointer;" title="删除" data-id="{$catelist.id}" data-toggle="modal" data-target="#del-modal"><i class="Hui-iconfont">&#xe6e2;</i></span></td>
+				</tr>
+				{/volist}
+
+				{$page}
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="modal middle-modal fade" id="add-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	<div class="modal-dialog cate-dialog" role="document">
+		<div class="modal-content">
+		</div>
+	</div>
+</div>
+
+<div class="modal middle-modal fade" id="edit-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	<div class="modal-dialog cate-dialog" role="document">
+		<div class="modal-content">
+		</div>
+	</div>
+</div>
+
+<!-- 删除dialog -->
+<div class="modal middle-modal fade" id="del-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+	<div class="modal-dialog cate-dialog" role="document">
+		<div class="modal-content">
+			<form id='cate-del-form'>
+				<div class='modal-header'>
+					<button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'></span></button><h4 class='modal-title'>删除</h4>
+				</div>
+				<div class='modal-body' style=" font-size: 18px; padding: 20px 0 10px 30px;">
+					<span>是否要删除！</span>
+				</div>
+				<div class='modal-footer'>
+					<button type='button' class='btn btn-default' data-dismiss='modal'>取消</button>
+					<button type='button' class='btn btn-primary cateDel-sub'>提交</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!--包含头部文件-->
+{include file="public/footer" /}
+<link rel="stylesheet" href="__STATIC__/admin/lib/bootstrap/bootstrap.min.css" />
+<script src="__STATIC__/admin/lib/bootstrap/bootstrap.min.js"></script>
+
+<script>
+	/*获取添加的内容*/
+    loadPage.init({
+        "clickDom": $(".btn-add"),
+		"url": "{:Url('add')}",
+        "modalConDom": $("#add-modal .modal-content")
+	});
+
+	/*获取编辑的内容*/
+    loadPage.init({
+        "clickDom": $(".btn-edit"),
+        "url": "{:Url('edit')}",
+        "modalConDom": $("#edit-modal .modal-content"),
+		"attrArr": ['id']
+    });
+
+
+    /*ajax请求添加的数据*/
+	$("#add-modal").on("click",'.cateAdd-sub',function(){
+		$.ajax({
+            url: "{:url('save')}",
+			type: "post",
+            data: $('#cate-add-form').serialize(),
+            success: function(res){
+                layer.msg(res.msg, {icon: 6,time:1000});
+                if(res.data){
+                    window.location = res.data;
+                }
+			}
+		})
+	});
+
+	/*ajax请求编辑的数据*/
+    $("#edit-modal").on("click",'.cateEdit-sub',function(){
+        $("#edit-modal").modal('hide');
+        $.ajax({
+            url: "{:url('save')}",
+            type: "post",
+            data: $('#cate-edit-form').serialize(),
+            success: function(res){
+                layer.msg(res.msg, {icon: 6,time:1000});
+                setTimeout(function(){
+                    if(res.data){
+                        window.location = res.data;
+                    }
+				},1000);
+            }
+        })
+    });
+
+    /*排序*/
+    $(".listorder>input").blur(function () {
+        var id = $(this).data("id");
+        var listorder = $(this).val();
+        var url = "{:url('listorder')}?id="+id+"&listorder="+listorder;
+        $.ajax({
+            url: url,
+            type: "get",
+            success: function(res){
+                layer.msg(res.msg, {icon: 6,time:1000});
+                setTimeout(function(){
+                    if(res.data){
+                        window.location = res.data;
+                    }
+                },1000);
+            }
+        });
+    });
+
+
+    var del_id = 0;
+    $(".btn-del").on("click",function(){
+        del_id = $(this).data('id');
+    });
+
+	/*ajax请求编辑的数据*/
+    $("#del-modal").on("click",'.cateDel-sub',function(){
+        $("#del-modal").modal('hide');
+        var url = "{:url('del')}?id="+del_id;
+        $.ajax({
+            url: url,
+            type: "get",
+            success: function(res){
+                layer.msg(res.msg, {icon: 6,time:1000});
+                setTimeout(function(){
+                    if(res.data){
+                        window.location = res.data;
+                    }
+                },1000);
+            }
+        })
+    });
+
+    $(".selectAll-del").on("click",function(){
+        getSelectAllTr();
+    });
+
+    function getSelectAllTr(){
+        $childrens = $(".table .table-body").children();
+        $childsArr = Array.prototype.slice.call($childrens);
+        var idsArr = [];
+        $childsArr.forEach(function(trDom){
+            if($(trDom).find('.checkbox_sel').is(":checked")){
+                idsArr.push($(trDom).data('id'));
+            }
+        });
+
+        $.ajax({
+            url: "{:url('del')}",
+            type: "post",
+            data: {idsArr:idsArr},
+            success: function(res){
+                layer.msg(res.msg, {icon: 6,time:3000});
+                setTimeout(function(){
+                    if(res.data){
+                        window.location = res.data;
+                    }
+                },1000);
+            }
+        })
+
+    }
+
+</script>
+
+</body>
+</html>

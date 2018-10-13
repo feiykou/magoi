@@ -1,0 +1,25 @@
+<form id='cate-edit-form'>
+    <div class='modal-header'>
+        <button type='button' class='close' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'></span></button><h4 class='modal-title' id='exampleModalLabel'>编辑分类</h4>
+    </div>
+    <div class='modal-body'>
+        <div class='form-group'>
+            <label class='control-label'>分类名称</label>
+            <input type='text' class='form-control' name='name' value='{$cateCurrent.name}'>
+            <input type="hidden" name="id" value="{$cateCurrent.id}">
+        </div>
+        <div class='form-group '>
+            <label class='control-label'>分类</label>
+            <select class='form-control' name='parent_id'>
+                <option value='0'>顶级分类</option>
+                {volist name='categorys' id='data'}
+                <option {if condition="$cateCurrent.parent_id == $data.id"}selected {/if}  value='{$data.id}'>{if condition="$data.parent_id != 0"}┞{/if}{$data.level|str_repeat='┄',###*2}{$data.name}</option>
+                {/volist}
+            </select>
+        </div>
+    </div>
+    <div class='modal-footer'>
+        <button type='button' class='btn btn-default' data-dismiss='modal'>取消</button>
+        <button type='button' class='btn btn-primary cateEdit-sub' data-id="">提交</button>
+    </div>
+</form>

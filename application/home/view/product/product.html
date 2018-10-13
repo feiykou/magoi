@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>唔该 - 飞扬</title>
+    <!--包含头部文件-->
+    {include file="public/header" /}
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <!--包含左侧logo-->
+            {include file="public/left" /}
+            <div class="content-wrap section">
+                <div class="content-container">
+                    <div class="content-section product-content-section">
+                        <h1 class="page-main-tit font30">产品</h1>
+                        <div class="curpage-nav">
+                            <ul class="clearfix">
+                                {volist name="productsData" id="data" }
+                                <li>
+                                    <div class="more-icon inside-page-more-icon"><img src="__STATIC__/home/images/more-icon.png" alt=""></div><span class="font18">{$key}</span>
+                                </li>
+                                {/volist}
+                            </ul>
+                        </div>
+                        {volist name="productsData" id="data"}
+                        <div class="product-page-wrap block-section">
+                            <h2 class="h-tit font16">{$key}</h2>
+                            <div class="product-page-item">
+                                <ul class="">
+                                    <?php foreach($productsData[$key] as $k=>$v):?>
+                                    <li class="active">
+                                        <div class="product-img">
+                                            <img src="{$v.main_img_url}" alt="">
+                                        </div>
+                                        <div class="tit-more clearfix">
+                                            <div class="tit font12 fl">
+                                                <p>{$v.introduce}</p>
+                                                <p>{$v.name}</p>
+                                            </div>
+                                            <div class="more-icon product-page-more-icon fr"><a href="{$v.link_url}"><img src="__STATIC__/home/images/more-icon.png" alt=""></a></div>
+                                        </div>
+                                    </li>
+                                    <?php endforeach;?>
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/volist}
+
+                    </div>
+                    <!--包含底部文件-->
+                    {include file="public/footer" /}
+                </div>
+            </div>
+        </div>
+        <!--包含头部文件-->
+        {include file="public/nav" /}
+    </div>
+</body>
+</html>
