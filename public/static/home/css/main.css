@@ -25,10 +25,10 @@ html,body,.container,.section{ height: 100%;}
 }
 .more-icon{
     display: inline-block;
-    width: 0.56rem;
-    height: 0.56rem;
-    line-height: 0.426667rem;
-    padding: 0.04rem;
+    width: 0.46rem;
+    height: 0.46rem;
+    line-height: 0.32rem;
+    padding: 0.053333rem;
     border-radius: 50%;
     border:0.026667rem solid #4576a1;
     cursor: pointer;
@@ -50,6 +50,25 @@ html,body,.container,.section{ height: 100%;}
 .head-theme-item .info-con{
     display: inline-block;
     overflow: hidden;
+}
+.info-mark,.info-mark-line{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+}
+.info-mark{
+    background-color: #4576a1;
+    opacity:1;
+    z-index:1;
+    left: 0;
+    box-shadow: 60px 0px 105px #4576a1;
+}
+.info-mark-line{
+    width:10px;
+    background-color: #4576a1;
+    z-index: 2;
+    box-shadow: 4px 0px 5px #fff;
 }
 .head-theme-item,.head-theme-item .info-con ul{  height: 8.533333rem; overflow: hidden; }
 .head-theme-item .info-con ul{
@@ -75,7 +94,7 @@ html,body,.container,.section{ height: 100%;}
 }
 .ch-logo span{
     position: absolute;
-    bottom: 0;
+    bottom: 0.08rem;
     left:0;
     width: 2.666667rem;
     line-height: 0.72rem;
@@ -190,8 +209,8 @@ html,body,.container,.section{ height: 100%;}
     background: #fff;
 }
 .source-item p{
-    padding-bottom: 0.266667rem;
-    line-height: 0.56rem;
+    padding-bottom: 0.566667rem;
+    line-height: 0.68rem;
     letter-spacing: 0.01em;
     text-align: justify;
 }
@@ -282,10 +301,10 @@ html,body,.container,.section{ height: 100%;}
 
     /* 公共更多按钮 */
     .more-icon{
-        width: 36px;
-        height: 36px;
-        line-height: 32px;
-        padding: 3px;
+        width: 24px;
+        height: 24px;
+        line-height: 22px;
+        padding: 4px;
         border:2px solid #4576a1;
     }
 
