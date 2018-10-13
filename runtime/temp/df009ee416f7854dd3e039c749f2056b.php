@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html";i:1539308860;s:71:"D:\SoftDownload\wamp\www\bigwu\application\home\view\public\header.html";i:1539395704;s:69:"D:\SoftDownload\wamp\www\bigwu\application\home\view\public\left.html";i:1539308444;s:71:"D:\SoftDownload\wamp\www\bigwu\application\home\view\public\footer.html";i:1539329366;s:68:"D:\SoftDownload\wamp\www\bigwu\application\home\view\public\nav.html";i:1539328589;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html";i:1539418776;s:71:"D:\SoftDownload\wamp\www\bigwu\application\home\view\public\header.html";i:1539395704;s:69:"D:\SoftDownload\wamp\www\bigwu\application\home\view\public\left.html";i:1539308444;s:71:"D:\SoftDownload\wamp\www\bigwu\application\home\view\public\footer.html";i:1539329366;s:68:"D:\SoftDownload\wamp\www\bigwu\application\home\view\public\nav.html";i:1539328589;}*/ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -83,14 +83,14 @@
                                 <div class="en-logo font54">mgoi</div>
                             </div>
                         </div>
-                        <div class="svg-container">
-                        <svg id="head-svg" viewBox="0 0 963 690" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx='520' cy='350' r='30' fill='#fff' opacity='0'>
-                                <animate id="a1" attributeName="r" attributeType="XML" from="0" to="800" begin="0s" dur="1s" keySplines='1 0 .25 .25' fill="freeze"></animate>
-                                <animate id="a2" attributeName="opacity" attributeType="css" from="1" to="0" begin="0s" dur=".6s" fill="freeze" keySplines='1 0 .25 .25'></animate>
-                            </circle>
-                        </svg>
-                        </div>
+                        <!--<div class="svg-container">-->
+                        <!--<svg id="head-svg" viewBox="0 0 963 690" xmlns="http://www.w3.org/2000/svg">-->
+                            <!--<circle cx='520' cy='350' r='30' fill='#fff' opacity='0'>-->
+                                <!--<animate id="a1" attributeName="r" attributeType="XML" from="0" to="800" begin="0s" dur="1s" keySplines='1 0 .25 .25' fill="freeze"></animate>-->
+                                <!--<animate id="a2" attributeName="opacity" attributeType="css" from="1" to="0" begin="0s" dur=".6s" fill="freeze" keySplines='1 0 .25 .25'></animate>-->
+                            <!--</circle>-->
+                        <!--</svg>-->
+                        <!--</div>-->
                     </div>
                     <!-- 分享 -->
                     <div class="share-wrap">

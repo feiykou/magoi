@@ -2849,3 +2849,1146 @@
 [ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.018832s ]
 [ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.019033s ]
 [ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.019071s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:28:13+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.312414s][吞吐率：3.20req/s] [内存消耗：3,049.22kb] [文件加载：50]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030332s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.020561s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.020584s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.020575s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.020474s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.030754s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.019469s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.019718s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.019340s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.019327s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:28:14+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.275224s][吞吐率：3.63req/s] [内存消耗：2,861.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030661s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.020542s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.020025s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.019920s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.019700s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.019376s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.019719s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.019286s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.019505s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.019000s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:28:19+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.289737s][吞吐率：3.45req/s] [内存消耗：2,861.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028965s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.019961s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.019733s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.019413s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.019469s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.018900s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.018982s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.018193s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.020362s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.018445s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:28:19+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.270670s][吞吐率：3.69req/s] [内存消耗：2,861.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029246s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.019697s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.019586s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.019645s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.019235s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.018806s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.018950s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.018776s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.018745s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.021439s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:28:20+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.270276s][吞吐率：3.70req/s] [内存消耗：2,861.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030941s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.018877s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.019250s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.019371s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.018934s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.018212s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.018069s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.018373s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.017797s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.017865s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:29:56+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.269772s][吞吐率：3.71req/s] [内存消耗：2,861.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027448s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.018474s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.018086s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.027444s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.017796s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.017414s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.017189s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.017155s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.017098s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.017144s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:29:57+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.274996s][吞吐率：3.64req/s] [内存消耗：2,861.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032266s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.022391s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.021236s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.021764s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.023728s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.021640s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.021120s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.020855s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.020932s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.020735s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:29:57+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.259728s][吞吐率：3.85req/s] [内存消耗：2,861.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.028160s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.019624s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.019542s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.019288s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.019698s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.019027s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.020676s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.018424s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.017882s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.017991s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:29:57+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.269562s][吞吐率：3.71req/s] [内存消耗：2,861.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027589s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.018382s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.018424s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.018760s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.018953s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.018201s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.017884s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.020146s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.017453s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.017277s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:29:58+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.313440s][吞吐率：3.19req/s] [内存消耗：2,861.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032358s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.021720s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.022492s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.022601s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.021622s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.021569s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.021072s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.021302s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.021324s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.020739s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:32:35+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.304286s][吞吐率：3.29req/s] [内存消耗：2,861.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032568s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.022468s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.022113s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.024633s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.022392s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.021716s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.021670s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.021111s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.020882s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.020847s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:32:36+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.273660s][吞吐率：3.65req/s] [内存消耗：2,861.05kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029808s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.020084s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.019833s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.019781s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.020413s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.019453s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.019303s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.018499s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.018766s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.018566s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:32:37+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.024420s][吞吐率：40.95req/s] [内存消耗：1,231.88kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T16:32:38+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.267146s][吞吐率：3.74req/s] [内存消耗：2,861.12kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032483s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.022040s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.021386s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.021558s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.021667s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.020510s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.020672s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.020765s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.020566s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.020428s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:32:38+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.035710s][吞吐率：28.00req/s] [内存消耗：1,231.88kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T16:32:48+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.291687s][吞吐率：3.43req/s] [内存消耗：2,861.12kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029839s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.020377s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.020061s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.019886s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.020930s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.020071s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.019137s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.018992s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.018829s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.021920s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:32:48+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.026386s][吞吐率：37.90req/s] [内存消耗：1,231.88kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T16:32:49+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.311603s][吞吐率：3.21req/s] [内存消耗：2,861.12kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033635s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.021233s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.021441s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.020875s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.020901s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.020887s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.020313s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.019849s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.020127s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.019451s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:32:49+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.024643s][吞吐率：40.58req/s] [内存消耗：1,231.88kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T16:33:02+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.300287s][吞吐率：3.33req/s] [内存消耗：2,861.12kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030495s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.020628s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.020681s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.020833s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.020866s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.020032s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.019803s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.019831s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.019782s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.019644s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:33:03+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.023841s][吞吐率：41.94req/s] [内存消耗：1,231.88kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T16:33:06+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.316553s][吞吐率：3.16req/s] [内存消耗：2,861.12kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.033372s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.021058s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.021379s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.022436s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.021844s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.021070s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.021016s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.020827s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.020594s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.020656s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:33:06+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.026254s][吞吐率：38.09req/s] [内存消耗：1,231.88kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T16:33:08+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.295667s][吞吐率：3.38req/s] [内存消耗：2,861.12kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031667s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.021042s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.021231s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.020862s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.021339s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.020429s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.019890s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.020041s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.020295s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.020098s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:33:08+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.025514s][吞吐率：39.19req/s] [内存消耗：1,231.88kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T16:33:09+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.278816s][吞吐率：3.59req/s] [内存消耗：2,861.12kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.031467s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.021394s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.021821s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.021306s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.020748s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.020971s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.020557s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.019848s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.020160s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.019920s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:33:10+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.024151s][吞吐率：41.41req/s] [内存消耗：1,231.88kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T16:33:12+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.282359s][吞吐率：3.54req/s] [内存消耗：2,861.12kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032750s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.021583s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.022108s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.022088s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.021192s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.021188s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.020531s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.020610s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.020854s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.021038s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:33:12+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.024219s][吞吐率：41.29req/s] [内存消耗：1,231.88kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-13T16:33:14+08:00 ] 127.0.0.1 GET /home
+[ info ] bigwu.com/home [运行时间：0.276677s][吞吐率：3.61req/s] [内存消耗：2,861.12kb] [文件加载：47]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'home',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/home' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\home\controller\Index->index[ D:\SoftDownload\wamp\www\bigwu\application\home\controller\Index.php ]
+[ info ] [ VIEW ] D:\SoftDownload\wamp\www\bigwu\public/../application/home\view\index\index.html [ array (
+  0 => 'columnData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.029009s ] mysql:host=119.23.11.98;dbname=bigwu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bw_category` [ RunTime:0.019334s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `status` = 1  AND `parent_id` = 0 ORDER BY `listorder` DESC,`id` DESC [ RunTime:0.019986s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 7  AND `status` = 1 [ RunTime:0.019385s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 8  AND `status` = 1 [ RunTime:0.019503s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 9  AND `status` = 1 [ RunTime:0.019022s ]
+[ sql ] [ SQL ] SELECT * FROM `bw_category` WHERE  `parent_id` = 10  AND `status` = 1 [ RunTime:0.019040s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '唔该'  AND `status` = 1 LIMIT 1 [ RunTime:0.018826s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '产品'  AND `status` = 1 LIMIT 1 [ RunTime:0.018407s ]
+[ sql ] [ SQL ] SELECT `id` FROM `bw_category` WHERE  `name` = '联系'  AND `status` = 1 LIMIT 1 [ RunTime:0.018604s ]
+---------------------------------------------------------------
+[ 2018-10-13T16:33:14+08:00 ] 127.0.0.1 GET /static/home/js/swiper.min.js.map
+[ info ] bigwu.com/static/home/js/swiper.min.js.map [运行时间：0.024041s][吞吐率：41.60req/s] [内存消耗：1,231.88kb] [文件加载：32]
+[ info ] [ LANG ] D:\SoftDownload\wamp\www\bigwu\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'home',
+    2 => 'js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'bigwu.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  '/static/home/js/swiper_min_js_map' => '',
+)
+[ info ] [ LOG ] INIT File
