@@ -9,7 +9,7 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 use think\Route;
-Route::get('/','home/index/index');
+Route::get('/home','home/index/index');
 Route::get('/product/[:cate_id]','home/product/product',[],['cate_id'=>'\d+']);
 Route::get('/about/[:cate_id]','home/about/about',[],['cate_id'=>'\d+']);
 Route::get('/contact/[:cate_id]','home/contact/contact',[],['cate_id'=>'\d+']);
