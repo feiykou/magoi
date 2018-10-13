@@ -50,7 +50,7 @@ html,body,.container,.section{ height: 100%;}
 .head-theme-item .info-con{
     display: inline-block;
 }
-.head-theme-item,.head-theme-item .info-con ul{  height: 8.533333rem; }
+.head-theme-item,.head-theme-item .info-con ul{  height: 8.533333rem; overflow: hidden; }
 .head-theme-item .info-con ul{
     -ms-writing-mode: tb-rl;
     -webkit-writing-mode: vertical-rl;
