@@ -130,10 +130,11 @@ html,body,.container,.section{ height: 100%;}
 .footer-nav{ padding-top: 60px; border-bottom: 2px solid  #4576a1; }
 .footer-nav ul>li{ padding: 0.4rem 0; border-right: 1px solid #4576a1;}
 .footer-nav ul>li.footer-logo-wrap{ padding-left: 1.066667rem; border-bottom: 0.026667rem solid #000; }
+.footer-nav ul>li.footer-logo-wrap img{ width: 60%; }
 .footer-nav-product img{ display: none;}
 .footer-nav ul>.footer-nav-shopping{ border-right:0;}
 .footer-nav-shopping{ position: absolute; right: 1.066667rem; bottom: 0;}
-.footer-nav-shopping img{ position: relative; top: -15px;}
+.footer-nav-shopping img{ width: 0.786667rem; height: 0.186667rem; position: relative; top: -15px;}
 .footer-nav ul>.three-nav{ display: flex; }
 .footer-nav ul>.three-nav p{  margin-left: 0.933333rem; }
 .footer-nav ul>.three-nav p.text a{ display: inline-block; line-height: 22px;}
