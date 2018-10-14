@@ -3,7 +3,7 @@ html,body,.container,.section{ height: 100%;}
 /* 页面框架 */
 .left-wrap{ display: none; }
 .tab-wrap{ position: fixed; top: 0; left: 0; right: 0; height: 1.146667rem; background-color: rgba(255,255,255,.9);}
-.tab-container,.tab-container dl{ height: 100%; display: flex; align-items: center; }
+.tab-container,.tab-container dl{ height: 100%; display: flex; align-items: center; font-weight: bold; }
 .tab-container dl dt{ display: none; margin-bottom: 25px;}
 .tab-container dl dd{ float: left; margin: 0 0.266667rem 0 0.666667rem}
 .content-wrap{ margin-top: 1.146667rem; }
@@ -120,7 +120,7 @@ html,body,.container,.section{ height: 100%;}
     margin-right: 0.333333rem;
     font-family: '微软雅黑';
     text-align: justify;
-    text-shadow: 1px 2px 2px #333;
+    /*text-shadow: 1px 2px 2px #333;*/
 }
 .ch-logo{
     position: relative;
@@ -132,9 +132,9 @@ html,body,.container,.section{ height: 100%;}
     position: absolute;
     bottom: 0.08rem;
     left:60px;
-    width: 2.666667rem;
+    width: 1.666667rem;
     line-height: 0.72rem;
-    text-shadow: 1px 2px 2px #333;
+    /*text-shadow: 1px 2px 2px #333;*/
 }
 .en-logo{
     display: none;
@@ -142,7 +142,7 @@ html,body,.container,.section{ height: 100%;}
     /*left: -1.533333rem;*/
     top: 2.2rem;
     /*margin: 0.8rem 0 0 2.133333rem;*/
-    text-shadow: 1px 2px 2px #333;
+    /*text-shadow: 1px 2px 2px #333;*/
 }
 
 .head-teme-more-icon{
@@ -161,8 +161,8 @@ html,body,.container,.section{ height: 100%;}
 
 /* 分享 */
 .share-wrap li{
-    height: 1.04rem;
-    line-height: 1.04rem;
+    height: 1.34rem;
+    line-height: 1.34rem;
     border-top: 2px solid #4576a1;
     overflow: hidden;
 }
