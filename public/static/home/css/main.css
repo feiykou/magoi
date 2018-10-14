@@ -7,6 +7,39 @@ html,body,.container,.section{ height: 100%;}
 .tab-container dl dt{ display: none; margin-bottom: 25px;}
 .tab-container dl dd{ float: left; margin: 0 0.266667rem 0 0.666667rem}
 .content-wrap{ margin-top: 1.146667rem; }
+
+
+/* 首页轮播 */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.product-swiper-container{
+}
+.product-swiper-container img{
+    width: 100%;
+}
+.swiper-wrapper{ display: flex;}
+.swiper-slide {
+    margin: 0 0.266667rem;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
 /* 公共更多按钮 */
 @-webkit-keyframes arrow {
     0% {
@@ -275,16 +308,21 @@ html,body,.container,.section{ height: 100%;}
 
 
 /* 小屏幕（平板，大于等于 768px） */
-@media only screen and (max-device-width: 992px) and (-webkit-max-device-pixel-ratio: 1){
+@media only screen and (max-device-width: 992px)  and
+(max-resolution: 96dpi){
     .head-teme-more-icon{
         width:100%;
     }
+    .swiper-wrapper .swiper-slide{float: left; margin:0 23px;}
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
-@media only screen and (min-width: 992px) and (-webkit-max-device-pixel-ratio: 1) and
-(max-resolution: 1dppx) and
+@media only screen and (min-width: 992px)  and
 (max-resolution: 96dpi){
+
+    .swiper-wrapper .swiper-slide{float: left; margin:0 23px;}
+
+
     /* 页面框架 */
     .main-content{ margin-right: 96px; }
     .left-wrap,.tab-wrap{ display: block; position: fixed; top: 0; }
@@ -525,8 +563,7 @@ html,body,.container,.section{ height: 100%;}
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media screen and (max-device-width: 1400px) and (min-device-width: 992px) and (-webkit-max-device-pixel-ratio: 1)
-and (max-resolution: 1dppx) and
+@media screen and (max-device-width: 1400px)  and
 (max-resolution: 96dpi){
     .product-page-item li.active{
         width: 48%;
@@ -542,8 +579,7 @@ and (max-resolution: 1dppx) and
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media screen and (min-width: 1200px) and (-webkit-max-device-pixel-ratio: 1) and
-(max-resolution: 1dppx) and
+@media screen and (min-width: 1200px)  and
 (max-resolution: 96dpi){
     .about-container{ width: 860px; margin-left: 110px;}
     .en-logo{ display: block; }
@@ -558,8 +594,7 @@ and (max-resolution: 1dppx) and
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media screen and (min-width: 1400px) and (-webkit-max-device-pixel-ratio: 1) and
-(max-resolution: 1dppx) and
+@media screen and (min-width: 1400px)  and
 (max-resolution: 96dpi){
     .about-container{ width: 860px; margin-left: 110px;}
     .head-theme-item{
