@@ -351,8 +351,7 @@ html,body,.container,.section{ height: 100%;}
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
-@media only screen and (min-width: 992px)  and
-(max-resolution: 96dpi){
+@media (min-width: 992px){
 
     .swiper-wrapper .swiper-slide{float: left; margin:0 23px;}
 
