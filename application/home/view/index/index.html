@@ -60,15 +60,16 @@
                             <li class="wx-wrap pr">
                                 <div class="share-icon"><img src="__STATIC__/home/images/wx-icon-hover.png" alt=""></div>
                                 <div class="share-tit"><div>最新的公众号资讯</div></div>
-                                <div class="share-more">
+                                <div class="share-more wx-open-img">
                                     <div class="more-icon"><img src="__STATIC__/home/images/more-icon-blue.png" alt=""></div>
                                 </div>
+
                             </li>
                             <li class="wx-wrap pr">
                                 <div class="share-icon"><img src="__STATIC__/home/images/wb-icon-hover.png" alt=""></div>
                                 <div class="share-tit"><div>官微带你看动态</div></div>
                                 <div class="share-more">
-                                    <div class="more-icon"><img src="__STATIC__/home/images/more-icon-blue.png" alt=""></div>
+                                    <div class="more-icon"><a href="https://weibo.com/u/5157058480" target="_blank"><img src="__STATIC__/home/images/more-icon-blue.png" alt=""></a></div>
                                 </div>
                             </li>
                             <li class="wx-wrap pr">
@@ -99,7 +100,7 @@
                     <div class="recruit-wrap clearfix">
                         <div class="recruit-info fl">
                             <h2 class="fl font20">招聘</h2>
-                            <p class="font12">我们正在寻找一名工业设计师，请联系我们哦</p>
+                            <p class="fl font12">我们正在寻找一名工业设计师，请联系我们哦</p>
                         </div>
                         <div class="recruit-more tr">
                             <div class="more-icon"><img src="__STATIC__/home/images/more-icon.png" alt=""></div>
@@ -122,11 +123,28 @@
         <!--包含头部文件-->
         {include file="public/nav" /}
     </div>
+    <div class="wx-img-wrap" style="display: none;">
+        <div class="wx-mask"></div>
+        <div class="wx-img-item">
+            <img src="__STATIC__/home/images/wx-logo.jpg" alt="">
+        </div>
+    </div>
     <script src="__STATIC__/home/js/jquery.js"></script>
     <script src="__STATIC__/home/js/tipIE.js"></script>
     <script src="__STATIC__/home/js/zepto.js"></script>
-    <script src="__STATIC__/home/js/anime.js"></script>
+
     <script type="text/javascript">
+
+        $(".wx-open-img").click(function(){
+            $(".wx-img-wrap").show();
+            $('.container').addClass('blur');
+        });
+        $(".wx-mask").click(function(){
+            $(".wx-img-wrap").hide();
+            $('.container').removeClass('blur');
+        });
+
+
         var head_text_w = $(".head-theme-item .info-con ul").width();
         var head_theme_item_w = $(".head-theme-item").width();
         var head_left_w = (head_theme_item_w - head_text_w) / 2;
