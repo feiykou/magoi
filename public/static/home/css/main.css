@@ -275,10 +275,10 @@ html,body,.container,.section{ height: 100%;}
 
 
 /* 小屏幕（平板，大于等于 768px） */
-@media only screen and (min-device-width: 768px) and (-webkit-max-device-pixel-ratio: 1) and
-(max-resolution: 1dppx) and
-(max-resolution: 96dpi){
-
+@media only screen and (max-device-width: 992px) and (-webkit-max-device-pixel-ratio: 1){
+    .head-teme-more-icon{
+        width:100%;
+    }
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
@@ -326,7 +326,7 @@ html,body,.container,.section{ height: 100%;}
     .ch-logo span{opacity: 0;}
     .ch-logo{float: left;}
     .ch-logo span{
-        width: 200px;
+        width: 140px;
         font-size: 54px;
         line-height: 54px;
     }
