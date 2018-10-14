@@ -46,7 +46,7 @@
         {id: '#cls16',d:"M578.43,440.75l-0.229,0.29c0.08-0.1,0.149-0.19,0.22-0.29H578.43z"},
         {id: '#cls17',d:"M578.2,441.04c-0.05,0.07-0.101,0.15-0.16,0.22h-0.01L578.2,441.04z"}];
 
-    var timeline = anime.timeline({ autoplay: true, direction: 'alternate', loop: true });
+    var timeline = anime.timeline({ autoplay: true});
     var $svg = $('#logo-svg');
     paths.forEach(function(path, index){
         if(!path.type){
@@ -93,6 +93,16 @@
                 },
                 offset: 1000 + 10 * index
             });
+        }
+    });
+    var mark = false;
+    timeline.complete = function(){
+        mark = true
+    };
+    $(window).on('scroll',function(){
+        if(mark){
+            timeline.restart();
+            mark = false;
         }
     });
 
