@@ -66,7 +66,7 @@
                                         <li>古语「该」通「赅」，意为具备、完备、包括。《说文解字》释「该」道：「军中约也。」这又把它的使用情况界定在军队内。作为语言发展的一种结果，「该」的派生义「应该」已成为今日使用中的主要义，而渐被人忘却的基本义则转由「赅」去承担。</li>
                                     </ul>
                                     <div class="info-mark line-mark"></div>
-                                    <div class="info-mark-line line-mark"></div>
+                                    <!--<div class="info-mark-line line-mark"></div>-->
                                 </div>
                                 <div class="ch-logo font26"><span>唔該</span></div>
                                 <div class="en-logo font54">mgoi</div>
@@ -162,8 +162,11 @@
     <script src="__STATIC__/home/js/swiper.min.js"></script>
     <script src="__STATIC__/home/js/anime.js"></script>
     <script type="text/javascript">
-        var hh = $(".head-theme-item .info-con ul").width();
-        $(".head-theme-item .info-con").width(hh);
+        var head_text_w = $(".head-theme-item .info-con ul").width();
+        var head_theme_item_w = $(".head-theme-item").width();
+        var head_left_w = (head_theme_item_w - head_text_w) / 2;
+
+        $(".head-theme-item .info-con").width(head_text_w);
         var timeline = anime.timeline();
         timeline.add({
             targets: '.info-mark',
@@ -171,12 +174,71 @@
             duration: 8000,
             offset: 0
         });
-//        timeline.add({
-//            targets: '.info-mark-line',
-//            translateX: '-'+hh,
-//            duration: 8000,
-//            offset: 0
-//        });
+
+        timeline.add({
+            targets: '.head-theme-item .info-con',
+            translateX: -head_left_w,
+            duration: 600,
+            offset: 1300,
+            easing: 'easeInOutSine',
+            elasticity: 1000,
+            complete: function (anim) {
+                if(anim.completed){
+                    console.log($(anim.animatables[0].target));
+                    $(anim.animatables[0].target).css({
+                        'float':'left',
+                        'transform': 'translateX(0)'
+                    });
+                }
+            }
+        });
+        timeline.add({
+            targets: '.ch-logo span',
+            left: {
+                value: 0,
+                duration: 1000,
+                easing: 'easeInOutSine'
+            },
+            opacity: {
+                value: 1,
+                duration: 1400
+            },
+            scale: [
+                {
+                    value: 1.1,
+                    duration: 500,
+                    delay: 800,
+                    easing: 'easeInOutSine'
+                },
+                {
+                    value: 1,
+                    duration: 300,
+                    delay: 300,
+                    easing: 'easeInOutQuart'
+                }
+            ],
+
+            duration: 1000,
+            offset: 2300,
+            easing: 'easeInCubic',
+            elasticity: 300
+        });
+        timeline.add({
+            targets: '.en-logo',
+            opacity: {
+                value: 1,
+                duration: 2000
+            },
+            right: {
+                value: 47,
+                duration: 1400,
+                offset: 0
+            },
+            duration: 2800,
+            offset: 2700,
+            easing: 'easeInOutQuart',
+            elasticity: 300
+        });
 
 
 
