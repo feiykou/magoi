@@ -250,7 +250,10 @@ svg {
 .head-teme-more-icon .more-icon{
     border-color: #fff;
 }
-
+.more-icon .imgblue{
+    display: none;
+    opacity: 0;
+}
 /* 分享 */
 .share-wrap li{
     height: 1.64rem;
@@ -464,10 +467,7 @@ svg {
         top: 10px;
         right: 82px;
     }
-    .more-icon .imgblue{
-        display: none;
-        opacity: 0;
-    }
+
     .head-teme-more-icon{
         width: 100%;
         margin-top: 0;
