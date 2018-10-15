@@ -113,6 +113,32 @@
         });
 
 
+
+        function getLeftW() {
+            var head_text_w = $(".head-theme-item .info-con ul").outerWidth();
+            var head_tit_w = $(".head-theme-item .info-con .ch-logo").outerWidth();
+            $(".head-theme-item .info-con").width(head_text_w+head_tit_w+30);
+            var ww = document.getElementsByClassName('ch-logo')[0];
+            var head_theme_item_w = $(".head-theme-item").width();
+            var head_text_w = $(".head-theme-item .info-con").width();
+            var head_left_w = (head_theme_item_w - head_text_w+30) / 2;
+            return head_left_w;
+        }
+
+        $mark = $(".info-mark");
+        $mark.animate({
+            width:0
+        },1000,function () {
+            var leftW = getLeftW();
+            $(".head-theme-item .info-con").animate({
+                marginLeft: -leftW
+            },1000,function(){
+                $('.en-logo').animate({
+                    opacity:1
+                },1000);
+            });
+        });
+
     </script>
 </body>
 </html>

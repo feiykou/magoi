@@ -8,20 +8,21 @@
     {include file="public/header" /}
     <style>
         .content-wrap .head-theme-wrap,.info-mark{ background-color:#ccaa42;}
-        .info-mark{box-shadow: 60px 0px 105px #ccaa42;}
+        .info-mark{box-shadow: 60px 0px 105px #ccaa42; opacity: 0;}
+        .en-logo{ opacity: 1;}
+        .head-teme-more-icon{ display: none;}
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container product-content-container">
         <div class="main-content">
             <!--包含左侧logo-->
             {include file="public/left" /}
             <div class="content-wrap section">
                 <div class="content-container">
-
-                    <!--包含左侧logo-->
-                    {include file="public/head-theme" /}
                     <div class="content-section product-content-section">
+                        <!--包含左侧logo-->
+                        {include file="public/head-theme" /}
                         <h1 class="page-main-tit font30">产品</h1>
                         <div class="curpage-nav">
                             <ul class="clearfix">
