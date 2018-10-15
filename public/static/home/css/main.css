@@ -351,7 +351,7 @@ html,body,.container,.section{ height: 100%;}
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
-@media (min-width: 992px){
+@media (min-device-width: 992px){
 
     .swiper-wrapper .swiper-slide{float: left; margin:0 23px;}
 
@@ -596,8 +596,7 @@ html,body,.container,.section{ height: 100%;}
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media screen and (max-device-width: 1400px)  and
-(max-resolution: 96dpi){
+@media screen and (max-device-width: 1400px)  and (min-device-width: 992px){
     .product-page-item li.active{
         width: 48%;
         margin: 0 4% 42px 0;
@@ -612,8 +611,7 @@ html,body,.container,.section{ height: 100%;}
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media screen and (min-width: 1200px)  and
-(max-resolution: 96dpi){
+@media screen and (min-device-width: 1200px){
     .about-container{ width: 860px; margin-left: 110px;}
     .en-logo{ display: block; }
     .head-theme-item{
@@ -627,8 +625,7 @@ html,body,.container,.section{ height: 100%;}
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
-@media screen and (min-width: 1400px)  and
-(max-resolution: 96dpi){
+@media screen and (min-device-width: 1400px){
     .about-container{ width: 860px; margin-left: 110px;}
     .head-theme-item{
         width: 80%;
