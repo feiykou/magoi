@@ -678,7 +678,7 @@ svg {
         width: 60%;
     }
 
-    .en-logo{
+    .en-logo {
         top:168px;
         right: -69px;
         -ms-writing-mode: lr-tb;
@@ -696,6 +696,10 @@ svg {
     .about-container{ width: 860px; margin-left: 110px;}
     .head-theme-item{
         width: 80%;
+    }
+    .en-logo {
+        top:168px;
+        right: -89px;
     }
 }
 
