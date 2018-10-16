@@ -35,7 +35,7 @@ html,body,.container,.section{ height: 100%;}
     width: 60%;
 }
 svg {
-    width: 8%;
+    /*width: 8%;*/
     display: block;
     margin: 0 auto;
 }
