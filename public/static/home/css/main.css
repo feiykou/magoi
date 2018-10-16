@@ -5,6 +5,7 @@ html,body,.container,.section{ height: 100%;}
     position: fixed;
     right: 0.4rem;
     top: 0.5rem;
+    z-index: 16;
     display: flex;
     align-items: center;
     justify-content: center;
