@@ -15,7 +15,7 @@ html,body,.container,.section{ height: 100%;}
     background-size: 1.6rem 1.6rem;
 
 }
-.tab-wrap{ position: fixed; top: 0; left: 0; right: 0; height: 1.146667rem; background-color: rgba(255,255,255,.9);}
+.tab-wrap{ position: fixed; top: 0; left: 0; right: 0; z-index: 11; height: 1.146667rem; background-color: rgba(255,255,255,.9);}
 .tab-container,.tab-container dl{ height: 100%; display: flex; align-items: center; font-weight: bold; }
 .tab-container dl dt{ display: none; margin-bottom: 25px;}
 .tab-container dl dd{ float: left; margin: 0 0.146667rem 0 0.566667rem;}
