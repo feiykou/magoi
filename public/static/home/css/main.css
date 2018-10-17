@@ -318,7 +318,8 @@ svg {
     vertical-align: middle;
 }
 .curpage-nav{
-    padding-bottom: 1.333333rem;
+    /*padding-bottom: 1.333333rem;*/
+    padding-bottom: 80px;
 }
 .curpage-nav ul li{
     float: left;
