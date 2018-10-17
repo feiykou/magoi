@@ -306,6 +306,8 @@ svg {
     color: #fff;
 }
 .page-main-tit{
+    height: 1.466667rem;
+    line-height: 1.466667rem;
     color: #fff;
     margin-bottom: 0.2rem;
 }
