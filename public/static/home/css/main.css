@@ -1,5 +1,5 @@
 
-html,body,.container,.section{ height: 100%;}
+body,.container,.section{ height: 100%;}
 /* 页面框架 */
 .left-wrap{
     position: fixed;
@@ -20,6 +20,8 @@ html,body,.container,.section{ height: 100%;}
 .tab-container dl dt{ display: none; margin-bottom: 25px;}
 .tab-container dl dd{ float: left; margin: 0 0.146667rem 0 0.566667rem;}
 .content-wrap{ margin-top: 1.146667rem; }
+
+
 
 /* svg动画 */
 .svg-container{
@@ -203,6 +205,9 @@ svg {
     text-align: justify;
     /*text-shadow: 1px 2px 2px #333;*/
 }
+.head-theme-tit{
+    display: inline-block;
+}
 .ch-logo{
     position: relative;
     height: 100%;
@@ -212,9 +217,8 @@ svg {
     height: 100%;
     vertical-align: bottom;
 }
-.ch-logo span{
-    display: inline-block;
-    padding-bottom: 0.266667rem;
+.ch-logo p{
+    padding-bottom: 0.2666rem;
 }
 
 .en-logo{
@@ -284,21 +288,21 @@ svg {
 /* 底部 */
 .footer{ border-top: 2px solid  #000;}
 .footer-nav{ padding-top: 10px; }
-.footer-nav ul>li{ padding: 0.4rem 0; border-right: 1px solid #4576a1;}
-.footer-nav ul>li.footer-logo-wrap{ padding-left: 1.266667rem; border-bottom: 0.026667rem solid #000; }
+.footer-nav ul{ padding: 0 0.72rem 0 0.8rem;}
+.footer-nav ul>li{ padding: 0.4rem 0;}
 .footer-nav ul>li.footer-logo-wrap img{ width: 40%; }
 .footer-nav-product img{ display: none;}
 .footer-nav ul>.footer-nav-shopping{ border-right:0;}
 .footer-nav-shopping{ position: absolute; right: 1.066667rem; bottom: 0;}
 .footer-nav-shopping img{ width: 0.786667rem; height: 0.186667rem; position: relative; top: -15px;}
 .footer-nav ul>.three-nav{ display: flex; }
-.footer-nav ul>.three-nav p{  margin-left: 0.933333rem; }
+.footer-nav ul>.three-nav p{  margin:0 0.833333rem 0 0.1rem; }
 .footer-nav ul>.three-nav p.text a{ display: inline-block; line-height: 22px;}
 
 
 
 .content-section{
-    padding: 1.333333rem 0.72rem 0 0.8rem;
+    padding: 1.333333rem 0.6rem 0 0.6rem;
     color: #fff;
 }
 .page-main-tit{
@@ -417,6 +421,8 @@ svg {
     .swiper-wrapper{ padding-left: 82px;}
     .swiper-wrapper .swiper-slide{float: left; margin:0 0 0 23px;}
 
+
+
     /* 页面框架 */
     .main-content{ margin-right: 96px; }
     .left-wrap,.tab-wrap{ display: block; position: fixed; top: 0; }
@@ -445,6 +451,10 @@ svg {
 
     /* 中部内容区 */
     .content-container{ display: block; height: auto; border: 2px solid #4576a1; }
+    .product-content-container{ border-color: #ccaa42;}
+    .about-content-container{ border-color: #bc412e;}
+    .contact-content-container{ border-color: #b5b5b5;}
+
     .content-wrap .head-theme-wrap{ display: block; height: auto; background-color: #4576a1; }
     .head-theme-item{ position: relative; display: block; width: 92%; height: 375px; margin: 0 auto; padding: 100px 0 142px 0;}
     /*.head-theme-item .info-con{float: left;}*/
@@ -457,10 +467,11 @@ svg {
     }
     /*.ch-logo span{opacity: 0;}*/
     /*.ch-logo{float: left;}*/
-    .ch-logo span{
+    .ch-logo p{
         width: 140px;
         font-size: 54px;
         line-height: 54px;
+        margin-bottom: 10px;
     }
     .en-logo{
         font-size: 90px;
@@ -544,10 +555,10 @@ svg {
     .shopping-wrap{ padding: 66px 0 66px 0;}
     .shopping-wrap .shopping-tip{ padding-left:136px; font-size:18px;}
     /* 底部 */
-    .footer{ border-top: 2px solid  #4576a1;}
-    .footer-nav{ padding-top: 60px; border-bottom: 2px solid  #4576a1; font-size: 18px;}
+    .footer{ border-top: 2px solid  #000;}
+    .footer-nav{ padding-top: 60px; font-size: 18px;}
     .footer-nav ul>.three-nav{ display: block; }
-    .footer-nav ul>li{ float: left; width: 33%; height: 200px; padding: 0;  border-right: 1px solid #4576a1;}
+    .footer-nav ul>li{ float: left; width: 33%; height: 200px; padding: 0;  border-right: 1px solid #000;}
     .footer-nav ul>li.footer-logo-wrap{ padding: 0; border-bottom: 0; line-height: 200px;}
     .footer-nav ul>li.footer-logo-wrap > div{ padding: 0 30px; }
     .footer-nav ul>li.footer-logo-wrap img{ width: 100%; }

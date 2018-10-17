@@ -45,6 +45,7 @@ class Login extends Controller
 
     // 登录验证
     public function getLogin(){
+        var_dump(input('post.'));
         if(request()->isPost()){
 //            $this->check(input('code'));
             $user = new UserModel();

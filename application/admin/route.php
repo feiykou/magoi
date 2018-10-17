@@ -9,3 +9,6 @@
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
 
+use think\Route;
+Route::get('/login','admin/login/login');
+Route::post('/admin/getLogin','admin/login/getLogin');
