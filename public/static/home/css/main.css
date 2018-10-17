@@ -421,8 +421,6 @@ svg {
     .swiper-wrapper{ padding-left: 82px;}
     .swiper-wrapper .swiper-slide{float: left; margin:0 0 0 23px;}
 
-
-
     /* 页面框架 */
     .main-content{ margin-right: 96px; }
     .left-wrap,.tab-wrap{ display: block; position: fixed; top: 0; }
