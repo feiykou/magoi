@@ -125,6 +125,11 @@ svg {
     width:100%;
     height: 100%;
 }
+.share-active{
+    display: block;
+    overflow: hidden;
+    transition: all .3s;
+}
 .share-active:active{
     background-color: #ccc;
 }
