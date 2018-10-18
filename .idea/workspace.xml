@@ -42,8 +42,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/static/home/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="13" />
+            <state relative-caret-position="44">
+              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -101,7 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>head-theme-tit</find>
       <find>.ch-logo span</find>
       <find>content-con</find>
       <find>.ch-logo p</find>
@@ -131,6 +130,7 @@
       <find>.index-start-mark</find>
       <find>.content-container</find>
       <find>.content-wrap</find>
+      <find>content-container</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -679,12 +679,12 @@
       <workItem from="1539565080612" duration="23241000" />
       <workItem from="1539668851618" duration="12047000" />
       <workItem from="1539770042273" duration="9715000" />
-      <workItem from="1539825553985" duration="14893000" />
+      <workItem from="1539825553985" duration="15288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155701000" />
+    <option name="totallyTimeSpent" value="156096000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -1109,8 +1109,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/static/home/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="13" />
+        <state relative-caret-position="44">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
