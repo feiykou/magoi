@@ -55,7 +55,9 @@
                     targets: path.id,
                     d: {
                         value: path.d,
-                        duration: 1000
+                        duration: 1000,
+                        easing: [.91,-0.54,.29,1.56]
+//                        easing: 'easeInQuad'
                     },
                     offset: 1000 + 10 * index
                 });
@@ -65,7 +67,7 @@
                     points: {
                         value: path.points,
                         duration: 1000,
-                        easing: 'easeInOutQuad'
+                        easing: [.91,-0.54,.29,1.56]
                     },
                     offset: 1000 + 10 * index
                 });
