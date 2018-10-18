@@ -3,7 +3,8 @@ body,.container,.section{ height: 100%;}
 .content-container {overflow: hidden;}
 /* 页面框架 */
 .left-wrap{
-
+    background: url("../images/frame-line.png") no-repeat;
+    background-size: 0 0;
     height: auto;
     position: fixed;
     right: 0.4rem;
@@ -27,8 +28,7 @@ body,.container,.section{ height: 100%;}
     top: 0.5rem;
     width: 1.6rem;
     height: 1.6rem;
-    background: url("../images/frame-line.png") no-repeat;
-    background-size: 1.6rem 1.6rem;
+
     z-index: 20;
 }
 #head-svg{
@@ -43,10 +43,10 @@ body,.container,.section{ height: 100%;}
     right: 0;
     top:0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: #fff;
     z-index: 20;
 }
-#logo-svg{ width: 60%;}
+#logo-svg{ width: 80%;}
 .tab-wrap{ position: fixed; top: 0; left: 0; right: 0; z-index: 11; height: 1.146667rem; background-color: rgba(255,255,255,.9);}
 .tab-container,.tab-container dl{ height: 100%; display: flex; align-items: center; font-weight: bold; }
 .tab-container dl dt{ display: none; margin-bottom: 25px;}
@@ -131,7 +131,7 @@ svg {
     transition: all .3s;
 }
 .share-active:active{
-    background-color: #ccc;
+    background-color: #ececec;
 }
 
 /* 首页轮播 */
