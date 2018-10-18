@@ -42,8 +42,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/static/home/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            <state relative-caret-position="192">
+              <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -101,7 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.admin_login dd .submit_btn</find>
       <find>head-theme-tit</find>
       <find>.ch-logo span</find>
       <find>content-con</find>
@@ -131,6 +130,7 @@
       <find>active</find>
       <find>.index-start-mark</find>
       <find>.content-container</find>
+      <find>.content-wrap</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -679,12 +679,12 @@
       <workItem from="1539565080612" duration="23241000" />
       <workItem from="1539668851618" duration="12047000" />
       <workItem from="1539770042273" duration="9715000" />
-      <workItem from="1539825553985" duration="14813000" />
+      <workItem from="1539825553985" duration="14893000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155621000" />
+    <option name="totallyTimeSpent" value="155701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
@@ -1109,8 +1109,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/static/home/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        <state relative-caret-position="192">
+          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="13" />
           <folding />
         </state>
       </provider>

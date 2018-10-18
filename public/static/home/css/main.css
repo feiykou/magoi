@@ -1,6 +1,6 @@
 
 body,.container,.section{ height: 100%;}
-.content-container{ overflow: hidden;}
+.content-container{ overflow-x: hidden;}
 /* 页面框架 */
 .left-wrap{
 
@@ -496,7 +496,7 @@ svg {
     .tab-container dl{ display: block; }
     .tab-container dl dt{ display: block; margin-bottom: 25px;}
     .tab-container dl dd{ float: none; margin:0 0 45px 0; line-height: 24px; font-size: 20px;}
-    .content-wrap{ float: right; width: 53%; overflow-y: hidden; margin-top: 0;}
+    .content-wrap{ float: right; width: 53%; overflow: hidden; margin-top: 0;}
     .tab-container dd a{ font-weight:bold;}
 
     /* 公共更多按钮 */
