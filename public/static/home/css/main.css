@@ -2,19 +2,36 @@
 body,.container,.section{ height: 100%;}
 /* 页面框架 */
 .left-wrap{
+    height: auto;
     position: fixed;
     right: 0.4rem;
     top: 0.5rem;
-    z-index: 16;
+    z-index: 21;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 6.6rem;
+    height: 6.6rem;
+    /*height: 1.6rem;*/
+}
+.svg-wrap{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.svg-target-item{
+    position: fixed;
+    right: 0.4rem;
+    top: 0.5rem;
     width: 1.6rem;
     height: 1.6rem;
     background: url("../images/frame-line.png") no-repeat;
     background-size: 1.6rem 1.6rem;
-
+    z-index: 20;
 }
+#logo-svg{ width: 60%;}
 .tab-wrap{ position: fixed; top: 0; left: 0; right: 0; z-index: 11; height: 1.146667rem; background-color: rgba(255,255,255,.9);}
 .tab-container,.tab-container dl{ height: 100%; display: flex; align-items: center; font-weight: bold; }
 .tab-container dl dt{ display: none; margin-bottom: 25px;}
@@ -33,9 +50,9 @@ body,.container,.section{ height: 100%;}
     top: 0;
 
 }
-#logo-svg{
-    width: 60%;
-}
+/*#logo-svg{*/
+    /*width: 60%;*/
+/*}*/
 svg {
     /*width: 8%;*/
     display: block;
@@ -408,19 +425,48 @@ svg {
 
 
 /* 小屏幕（平板，大于等于 768px） */
-@media only screen and (max-device-width: 992px) and (max-width: 992px){
+@media only screen and (min-device-width: 992px) and (max-width: 992px){
     .head-teme-more-icon{
         width:100%;
     }
-
+    /* 滚动美化 */
+    ::-webkit-scrollbar{width:2px;height:0px;background:#4576a1;}
+    ::-webkit-scrollbar-button{background-color:#fff;}
+    ::-webkit-scrollbar-track{background:#4576a1;}
+    ::-webkit-scrollbar-track-piece{background:#fff}
+    ::-webkit-scrollbar-thumb{background:#4576a1;}
+    ::-webkit-scrollbar-corner{background:#82AFFF;}
+    ::-webkit-scrollbar-resizer{background:#FF0BEE;}
+    scrollbar{-moz-appearance:none !important;background:rgb(0,255,0) !important;}
+    scrollbarbutton{-moz-appearance:none !important;background-color:rgb(0,0,255) !important;}
+    scrollbarbutton:hover{-moz-appearance:none !important;background-color:rgb(255,0,0) !important;}
+    scrollbarbutton{display:none !important;}
+    scrollbar[orient="vertical"]{min-width:3px !important;}
     .swiper-wrapper .swiper-slide{float: left; margin:0 23px;}
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
 @media (min-device-width: 992px) and (min-width: 992px){
+
+    /*左侧logo部分*/
+    .index-start-mark,.svg-target-item{  display: none;}
+
     .swiper-wrapper{ padding-left: 82px;}
     .swiper-wrapper .swiper-slide{float: left; margin:0 0 0 23px;}
 
+    /* 滚动美化 */
+    ::-webkit-scrollbar{width:2px;height:0px;background:#4576a1;}
+    ::-webkit-scrollbar-button{background-color:#fff;}
+    ::-webkit-scrollbar-track{background:#4576a1;}
+    ::-webkit-scrollbar-track-piece{background:#fff}
+    ::-webkit-scrollbar-thumb{background:#4576a1;}
+    ::-webkit-scrollbar-corner{background:#82AFFF;}
+    ::-webkit-scrollbar-resizer{background:#FF0BEE;}
+    scrollbar{-moz-appearance:none !important;background:rgb(0,255,0) !important;}
+    scrollbarbutton{-moz-appearance:none !important;background-color:rgb(0,0,255) !important;}
+    scrollbarbutton:hover{-moz-appearance:none !important;background-color:rgb(255,0,0) !important;}
+    scrollbarbutton{display:none !important;}
+    scrollbar[orient="vertical"]{min-width:3px !important;}
     /* 页面框架 */
     .main-content{ margin-right: 96px; }
     .left-wrap,.tab-wrap{ display: block; position: fixed; top: 0; }

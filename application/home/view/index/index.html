@@ -13,6 +13,33 @@
             position: absolute;
             top: 0;
         }
+
+        .index-start-mark{
+            position: fixed;
+            left: 0;
+            right: 0;
+            top:0;
+            bottom: 0;
+            background-color: #ccc;
+            z-index: 20;
+        }
+        /*.left-wrap{*/
+            /*background-color: #ccc;*/
+        /*}*/
+        /*.left-wrap .svg-wrap{*/
+            /*position: fixed;*/
+            /*width: 5.6rem;*/
+            /*height: 5.6rem;*/
+            /*line-height: 5.6rem;*/
+            /*text-align: center;*/
+            /*left: 50%;*/
+            /*margin-left: -2.8rem;*/
+            /*top:50%;*/
+            /*margin-top:-2.8rem;*/
+            /*!*background: url("__STATIC__/home/images/frame-line.png") no-repeat;*!*/
+            /*!*background-size: 1.6rem 1.6rem;*!*/
+        /*}*/
+
     </style>
 </head>
 <body>
@@ -96,9 +123,11 @@
             <img src="__STATIC__/home/images/wx-logo.jpg" alt="">
         </div>
     </div>
+
     <!--包含底部文件-->
     {include file="public/script" /}
     <script src="__STATIC__/home/js/zepto.js"></script>
+    <script src="__STATIC__/home/js/parabola.js"></script>
 
     <script type="text/javascript">
 
@@ -110,6 +139,54 @@
             $(".wx-img-wrap").hide();
             $('.container').removeClass('blur');
         });
+
+        function IsPC() {
+            var userAgentInfo = navigator.userAgent;
+            var Agents = ["Android", "iPhone",
+                "SymbianOS", "Windows Phone",
+                "iPad", "iPod"];
+            var flag = true;
+            for (var v = 0; v < Agents.length; v++) {
+                if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+        if(!IsPC()){
+            var $mark_w = $('.index-start-mark').width();
+            var $mark_h = $('.index-start-mark').height();
+
+            var left_w = $(".left-wrap").width();
+            var left_h = $(".left-wrap").height();
+
+            var left_l = ($mark_w - left_w) / 2;
+            var left_t = ($mark_h - left_h) / 2;
+
+            $(".left-wrap").css({
+                'right': left_l,
+                'top': left_t,
+            });
+
+            //抛物线运动的触发
+            setTimeout(function(){
+                $(".index-start-mark").animate({
+                    'opacity': '0',
+                },500);
+                $(".left-wrap").animate({
+                    right:'0.4rem',
+                    top: '0.5rem',
+                    width: '1.6rem',
+                    height: '1.6rem'
+                },500);
+                $(".svg-wrap").animate({
+                    width: '1.6rem',
+                    height: '1.6rem'
+                },1000);
+            },3200);
+        }
+
 
 
 
