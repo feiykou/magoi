@@ -1,5 +1,6 @@
 
 body,.container,.section{ height: 100%;}
+html{ overflow-x: hidden;}
 /* 页面框架 */
 .left-wrap{
 
