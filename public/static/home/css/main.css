@@ -2,16 +2,17 @@
 body,.container,.section{ height: 100%;}
 /* 页面框架 */
 .left-wrap{
+
     height: auto;
     position: fixed;
     right: 0.4rem;
     top: 0.5rem;
     z-index: 21;
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 6.6rem;
     height: 6.6rem;
+    display: none;
     /*height: 1.6rem;*/
 }
 .svg-wrap{
@@ -31,12 +32,31 @@ body,.container,.section{ height: 100%;}
     background-size: 1.6rem 1.6rem;
     z-index: 20;
 }
+#head-svg{
+    position: absolute;
+    top: 0;
+}
+
+.index-start-mark{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    background-color: #ccc;
+    z-index: 20;
+}
 #logo-svg{ width: 60%;}
 .tab-wrap{ position: fixed; top: 0; left: 0; right: 0; z-index: 11; height: 1.146667rem; background-color: rgba(255,255,255,.9);}
 .tab-container,.tab-container dl{ height: 100%; display: flex; align-items: center; font-weight: bold; }
 .tab-container dl dt{ display: none; margin-bottom: 25px;}
 .tab-container dl dd{ float: left; margin: 0 0.146667rem 0 0.566667rem;}
 .content-wrap{ margin-top: 1.146667rem; }
+.tab-container dd a.active-0.active,.tab-container dd a.active-0:hover{ color: #bc412e;}
+.tab-container dd a.active-1.active,.tab-container dd a.active-1:hover{ color: #ccaa42;}
+.tab-container dd a.active-2.active,.tab-container dd a.active-2:hover{ color: #b5b5b5;}
+.tab-container dd a.active-3.active,.tab-container dd a.active-3:hover{ color: #bc412e;}
 
 
 
@@ -479,10 +499,6 @@ svg {
     .tab-container dl dd{ float: none; margin:0 0 45px 0; line-height: 24px; font-size: 20px;}
     .content-wrap{ float: right; width: 53%; overflow-y: hidden; margin-top: 0;}
     .tab-container dd a{ font-weight:bold;}
-    .tab-container dd a.active-0.active,.tab-container dd a.active-0:hover{ color: #bc412e;}
-    .tab-container dd a.active-1.active,.tab-container dd a.active-1:hover{ color: #ccaa42;}
-    .tab-container dd a.active-2.active,.tab-container dd a.active-2:hover{ color: #b5b5b5;}
-    .tab-container dd a.active-3.active,.tab-container dd a.active-3:hover{ color: #bc412e;}
 
     /* 公共更多按钮 */
     .more-icon{
