@@ -8,8 +8,6 @@ body,.container,.section{ height: 100%;}
     right: 0.4rem;
     top: 0.5rem;
     z-index: 21;
-    align-items: center;
-    justify-content: center;
     width: 6.6rem;
     height: 6.6rem;
     display: none;
