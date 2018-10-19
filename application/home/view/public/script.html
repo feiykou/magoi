@@ -3,12 +3,6 @@
 <script src="__STATIC__/home/js/anime.js"></script>
 <script>
 
-//    window.onload = function(){
-//        var doma=document.getElementsByClassName('share-active');
-//        for(var i=0;i<doma.length;i++){
-//            doma[i].addEventListener('touchstart',function(){},false);
-//        };
-//    }
     document.addEventListener('touchstart',function(){},false);
 
     var head_text_w = $(".head-theme-item .info-con ul").outerWidth();
@@ -98,22 +92,7 @@
         function getScrollTop () {
             return document.documentElement.scrollTop || document.body.scrollTop;
         }
-        
-//        function animeStart(mark) {
-//            console.log(111);
-//            setTimeout(function(){
-//                timeline.restart();
-//            },1000)
-//
-////            if(mark){
-////                timeline.reverse();
-////                console.log('play');
-////            }else{
-////                console.log('pause');
-////                timeline.reverse();
-//////                timeline.pause();
-////            }
-//        }
+
 
         var scroll_mark = true;
         var end_scroll_timer = null;

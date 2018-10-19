@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>唔该</title>
+    <title>唔该mgoi - 宠物用品，狗粮，猫抓板</title>
+    <meta name="keyword" content="宠物,狗粮,猫圈">
+    <meta name="description" content="">
     <!--包含头部文件-->
     {include file="public/header" /}
 </head>
@@ -110,9 +112,30 @@
             $('.container').removeClass('blur');
         });
 
-//        $(".wx-wrap")
-
-
+        $(".wx-wrap .share-more").hover(function(){
+            $(this).find('img').attr('src','__STATIC__/home/images/more-icon.png');
+            $(this).find('.more-icon').css({
+                'border-color': '#fff'
+            });
+            $(this).parents('.wx-wrap').css({
+                background:'#4576a1',
+            });
+            $(this).parents('.wx-wrap').find('.share-tit').css({
+                color: '#fff'
+            });
+//            $(this).parents('.wx-wrap').find('.share-icon img').attr('src','__STATIC__/home/images/');
+        },function(){
+            $(this).find('img').attr('src','__STATIC__/home/images/more-icon-blue.png');
+            $(this).find('.more-icon').css({
+                'border-color': '#4576a1'
+            });
+            $(this).parents('.wx-wrap').css({
+                background:'#fff',
+            });
+            $(this).parents('.wx-wrap').find('.share-tit').css({
+                color: '#4576a1'
+            });
+        });
 
 
         function getLeftW() {

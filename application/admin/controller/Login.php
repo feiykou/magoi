@@ -45,7 +45,6 @@ class Login extends Controller
 
     // 登录验证
     public function getLogin(){
-        var_dump(input('post.'));
         if(request()->isPost()){
 //            $this->check(input('code'));
             $user = new UserModel();
@@ -57,7 +56,7 @@ class Login extends Controller
                 $this->error('密码错误！',url('/login'));
             }
             if($result === 2){
-                $this->success('登录成功',url('/admin'));
+                $this->success('登录成功',url('/admin'),'','1');
             }
         }else{
             // 获取session

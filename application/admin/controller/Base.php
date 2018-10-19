@@ -14,31 +14,31 @@ use think\Controller;
 class Base extends Controller
 {
     private $account;
-//    public function _initialize()
-//    {
-//        $isLogin = $this->isLogin();
-//        if(!$isLogin){
-//            $this->redirect(url('/login'));
-//        }
-//    }
-//
-//    /* 判断是否登录 */
-//    public function isLogin(){
-//        // 获取session
-//        $user = $this->getLoginUser();
-//        if($user && $user['id']){
-//            return true;
-//        }
-//        return false;
-//    }
-//
-//    /* 获取session数据 */
-//    public function getLoginUser(){
-//        if(!$this->account){
-//            $this->account['id'] = session('user_id');
-//        }
-//        return $this->account;
-//    }
+    public function _initialize()
+    {
+        $isLogin = $this->isLogin();
+        if(!$isLogin){
+            $this->redirect(url('/login'));
+        }
+    }
+
+    /* 判断是否登录 */
+    public function isLogin(){
+        // 获取session
+        $user = $this->getLoginUser();
+        if($user && $user['id']){
+            return true;
+        }
+        return false;
+    }
+
+    /* 获取session数据 */
+    public function getLoginUser(){
+        if(!$this->account){
+            $this->account['id'] = session('user_id');
+        }
+        return $this->account;
+    }
 
     public function status(){
         // 获取值
