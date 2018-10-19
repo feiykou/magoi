@@ -46,7 +46,7 @@ body,.container,.section{ height: 100%;}
     background-color: #fff;
     z-index: 20;
 }
-#logo-svg{ width: 80%;}
+#logo-svg{ width: 72%;}
 .tab-wrap{ position: fixed; top: 0; left: 0; right: 0; z-index: 11; height: 1.146667rem; background-color: rgba(255,255,255,.9);}
 .tab-container,.tab-container dl{ height: 100%; display: flex; align-items: center; font-weight: bold; }
 .tab-container dl dt{ display: none; margin-bottom: 25px;}

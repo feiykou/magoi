@@ -47,7 +47,7 @@
             {id:"#cls15",d:"M740.33,601.17c-0.44-1.08-1.53-1.52-3.271-1.31c-3.719,4.59-7.858,9.62-12.448,15.069  c5.68,7.431,10.92,14.63,15.72,21.61c2.18,3.93,4.37,7.21,6.55,9.83c3.061,4.58,5.679,8.96,7.86,13.1  c7.21-5.239,14.41-10.689,21.62-16.38C763.47,629.99,751.47,616.03,740.33,601.17"}
         ];
 
-        var timeline = anime.timeline({ autoplay: true,'direction':'alternate'});
+        var timeline = anime.timeline();
         var $svg = $('#logo-svg');
         paths.forEach(function(path, index){
             if(!path.type){
@@ -59,7 +59,9 @@
                         easing: [.91,-0.54,.29,1.56]
 //                        easing: 'easeInQuad'
                     },
-                    offset: 1000 + 10 * index
+                    direction: 'alternate',
+                    offset: 300 + 60 * index,
+                    autoplay: true
                 });
             }else if(path.type == 'polygon'){
                 timeline.add({
@@ -69,24 +71,76 @@
                         duration: 1000,
                         easing: [.91,-0.54,.29,1.56]
                     },
-                    offset: 1000 + 10 * index
+                    direction: 'alternate',
+                    offset: 1000 + 10 * index,
+                    autoplay: true
                 });
-            }
+            };
+
         });
-        var mark = false;
-        timeline.complete = function(){
-            mark = true
-        };
-        $(window).on('scroll',function(){
-            if(mark){
-                timeline.restart({duration: 1000});
-                mark = false;
+        console.log(timeline);
+        timeline.direction = 'alternate';
+        timeline.restart();
+//        timeline.complete = function(){
+//            mark = true
+//        };
+
+
+
+
+
+        function getScrollTop () {
+            return document.documentElement.scrollTop || document.body.scrollTop;
+        }
+        
+//        function animeStart(mark) {
+//            console.log(111);
+//            setTimeout(function(){
+//                timeline.restart();
+//            },1000)
+//
+////            if(mark){
+////                timeline.reverse();
+////                console.log('play');
+////            }else{
+////                console.log('pause');
+////                timeline.reverse();
+//////                timeline.pause();
+////            }
+//        }
+
+        var scroll_mark = true;
+        var end_scroll_timer = null;
+        var t1,
+            t2 = 0,
+            timer=null;
+        // 判断是否滚动
+        function isScrollEnd() {
+            t2 = getScrollTop();
+            if(t2 == t1){
+                end_scroll_timer = setTimeout(function(){
+                    timeline.play();
+                    timeline.reverse();
+                    scroll_mark = true;
+                },1000);
             }
+        }
+        $(window).on('scroll',function(){
+            clearTimeout(timer);
+            clearTimeout(end_scroll_timer);
+            if(scroll_mark){
+                timeline.direction = 'normal';
+                timeline.play();
+                timeline.restart();
+                scroll_mark = false;
+            }
+            t1 = getScrollTop();
+            timer = setTimeout(isScrollEnd,100);
         });
 
         $(".left-wrap").mouseenter(function(){
-            console.log(mark);
-            timeline.restart();
+            timeline.direction = 'alternate';
+            timeline.play();
         });
     })();
     function IsPC() {
