@@ -745,7 +745,7 @@ share-active:active{
     .shopping-wrap .shopping-tip img{
         width: 60%;
     }
-    .head-theme-item,.head-theme-item .info-con ul{  height: 375px; }
+    /*.head-theme-item,.head-theme-item .info-con ul{  height: 375px; }*/
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
