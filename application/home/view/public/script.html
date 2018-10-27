@@ -54,7 +54,7 @@
 //                        easing: 'easeInQuad'
                     },
                     direction: 'alternate',
-                    offset: 300 + 60 * index,
+                    offset: 0,
                     autoplay: true
                 });
             }else if(path.type == 'polygon'){
@@ -66,7 +66,7 @@
                         easing: [.91,-0.54,.29,1.56]
                     },
                     direction: 'alternate',
-                    offset: 1000 + 10 * index,
+                    offset: 0,
                     autoplay: true
                 });
             };
@@ -107,7 +107,7 @@
                     timeline.play();
                     timeline.reverse();
                     scroll_mark = true;
-                },1000);
+                },800);
             }
         }
         $(window).on('scroll',function(){
@@ -125,7 +125,7 @@
 
         $(".left-wrap").mouseenter(function(){
             timeline.direction = 'alternate';
-            timeline.play();
+            timeline.restart();
         });
 
 
