@@ -632,14 +632,13 @@ share-active:active{
     .footer-nav ul>li.footer-logo-wrap{ padding: 0; border-bottom: 0; line-height: 200px;}
     .footer-nav ul>li.footer-logo-wrap > div{ padding: 0 30px; }
     .footer-nav ul>li.footer-logo-wrap img{ width: 100%; }
-    .footer-nav-product{ margin: 20px 0;}
     .footer-nav-product img{ display: inline-block; margin-left: 15px;}
     .footer-nav ul>.footer-nav-shopping{ position: static; text-align: center; border-right:0;}
     .footer-nav-shopping{ line-height: 200px;}
     .footer-nav-shopping img{ position: relative; top: -15px;}
     .footer-nav ul>.three-nav p{ margin-left: 30px; }
     .footer-nav ul>.three-nav p.text a{ display: inline-block; width: 20px; line-height: 22px;}
-
+    .footer-nav ul>.three-nav p.footer-nav-product{ margin-top: 20px;margin-bottom: 20px;}
 
 
     .content-section{
